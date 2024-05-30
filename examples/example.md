@@ -1,16 +1,14 @@
-
-
-![[Pasted image 20240530013120.png]]
-
+![[Pasted image 20240530024838.png]]
 ```plantuml
 @startuml
+left to right direction
 
 skinparam linetype ortho
 
 class Taller {
-    -cuit: int
-    -nombre: string
-    -direccion: string
+    - cuit: int
+    - nombre: string
+    - direccion: string
 }
 
 class Persona{
@@ -22,12 +20,11 @@ class Persona{
 }
 
 class Dueño {
-    -nroCliente: string
-    -fechaRegistro: date
-    -nroLicencia: int
-    -tipoLicencia: int
+    - nroCliente: string
+    - fechaRegistro: date
+    - nroLicencia: int
+    - tipoLicencia: int
 }
-
 
 class Vehiculo {
     - año: int
@@ -35,26 +32,31 @@ class Vehiculo {
     - modelo: string
     - marca: string
     - tipo: string
-    -matricula: string
-    -utilidad: string
+    - matricula: string
+    - utilidad: string
 
     ' parte de metodos
-    +getVehiculo()
+    + getVehiculo()
 }
 
 class Personal_AtencionAlCliente{
-    -CUIL: int
-    -estado: string
-    -turno: string
+    - CUIL: int
+    - estado: string
+    - turno: string
 
-    +consultarInfoVehiculo()
+    + consultarInfoVehiculo()
 }
 
+' ##### PARTE DE RELACIONES #####
 
 Persona <|-- Personal_AtencionAlCliente 
 Persona <|-- Dueño
 
-Dueño -- Vehiculo: posee >
+Dueño "1" --- "1..*" Vehiculo: Tiene >
+Vehiculo "1..*" ---- "1..1*" Personal_AtencionAlCliente: < Consulta
 
+Taller "1..1" -- "1..*" Personal_AtencionAlCliente: < Trabaja
+Taller "1..1" ---- "1..*" Vehiculo:  Verifica >
 @enduml
+
 ```
