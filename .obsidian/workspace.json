@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "e917f6cd96783f0e",
+    "type": "split",
+    "children": [
+      {
+        "id": "cd548d4224c8940e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1dbc64797f6fd53a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "853df69342dc66b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "plantuml/ejemplo.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "779ce610c52e49b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "9767913ef58aeb2d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5d7818dddc84efdd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a66f070c8008eb1d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d0be380775244b74",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d8dd353bbe9007eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "1ee7287118b59c57",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "84581cfa7d849b96",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "plantuml/ejemplo.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0dd3c161af8866d8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "plantuml/ejemplo.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3c9568b7dcea092c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6a0c7bf4b9e1faca",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "plantuml/ejemplo.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "853df69342dc66b9",
+  "lastOpenFiles": [
+    "plantuml/index.html",
+    "plantuml/ejemplo.md",
+    "plantuml/script.js",
+    "plantuml",
+    "uml.md",
+    "node_modules/markdown-it-plantuml/lib/deflate.js",
+    "node_modules/markdown-it-plantuml/lib",
+    "node_modules/markdown-it-plantuml/README.md",
+    "node_modules/markdown-it-plantuml/LICENSE",
+    "node_modules/markdown-it-plantuml/index.js",
+    "node_modules/markdown-it-plantuml/package.json",
+    "node_modules/markdown-it/bin/markdown-it.mjs",
+    "node_modules/markdown-it/bin",
+    "node_modules/markdown-it/index.mjs",
+    "node_modules/markdown-it/README.md",
+    "node_modules/entities/readme.md",
+    "node_modules/mdurl/README.md",
+    "node_modules/linkify-it/README.md",
+    "node_modules/uc.micro/README.md",
+    "node_modules/punycode.js/README.md"
+  ]
+}
