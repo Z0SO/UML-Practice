@@ -4,24 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "cd548d4224c8940e",
+        "id": "98b15bc3e509acb1",
         "type": "tabs",
         "children": [
           {
-            "id": "1dbc64797f6fd53a",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "853df69342dc66b9",
+            "id": "ed0cf29efb215317",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "plantuml/ejemplo.md",
+                "file": "examples/example.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "df424a128879f3b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Diagrama de Clases.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "d8dd353bbe9007eb",
@@ -94,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "plantuml/ejemplo.md",
+                "file": "Diagrama de Clases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "plantuml/ejemplo.md",
+                "file": "Diagrama de Clases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "plantuml/ejemplo.md"
+                "file": "Diagrama de Clases.md"
               }
             }
           }
@@ -155,8 +159,18 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "853df69342dc66b9",
+  "active": "df424a128879f3b7",
   "lastOpenFiles": [
+    "examples/example.md",
+    "Diagrama de Clases.md",
+    "docs/Diagrama-Clases",
+    "Pasted image 20240530013120.png",
+    "examples/Sin título.md",
+    "examples",
+    "diagramas",
+    "docs",
+    "Pasted image 20240530002219.png",
+    "README.md",
     "plantuml/index.html",
     "plantuml/ejemplo.md",
     "plantuml/script.js",
@@ -166,11 +180,6 @@
     "node_modules/markdown-it-plantuml/lib",
     "node_modules/markdown-it-plantuml/README.md",
     "node_modules/markdown-it-plantuml/LICENSE",
-    "node_modules/markdown-it-plantuml/index.js",
-    "node_modules/markdown-it-plantuml/package.json",
-    "node_modules/markdown-it/bin/markdown-it.mjs",
-    "node_modules/markdown-it/bin",
-    "node_modules/markdown-it/index.mjs",
     "node_modules/markdown-it/README.md",
     "node_modules/entities/readme.md",
     "node_modules/mdurl/README.md",
