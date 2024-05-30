@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d8dd353bbe9007eb",
@@ -161,9 +162,9 @@
   },
   "active": "df424a128879f3b7",
   "lastOpenFiles": [
-    "examples/Pasted image 20240530013120.png",
     "examples/example.md",
     "docs/Diagrama-Clases/Diagrama de Clases.md",
+    "examples/Pasted image 20240530013120.png",
     "docs/Diagrama-Clases",
     "Pasted image 20240530013120.png",
     "examples/Sin título.md",
