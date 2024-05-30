@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diagrama de Clases.md",
+                "file": "docs/Diagrama-Clases/Diagrama de Clases.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Diagrama de Clases.md",
+                "file": "docs/Diagrama-Clases/Diagrama de Clases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Diagrama de Clases.md",
+                "file": "docs/Diagrama-Clases/Diagrama de Clases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Diagrama de Clases.md"
+                "file": "docs/Diagrama-Clases/Diagrama de Clases.md"
               }
             }
           }
@@ -159,10 +159,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "df424a128879f3b7",
+  "active": "5d7818dddc84efdd",
   "lastOpenFiles": [
     "examples/example.md",
-    "Diagrama de Clases.md",
+    "docs/Diagrama-Clases/Diagrama de Clases.md",
     "docs/Diagrama-Clases",
     "Pasted image 20240530013120.png",
     "examples/Sin título.md",
