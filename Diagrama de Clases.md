@@ -50,4 +50,44 @@ En este caso:
 - Se define una segunda clase llamada `Empleado`.
 - Se indica una relación de herencia entre `Persona` y `Empleado` con `Persona <|-- Empleado`.
 
-Esto debería darte una buena base para comenzar a crear clases en PlantUML.
+# 3.6 Definiendo la Visibilidad
+
+Cuando defines propiedades o métodos, puedes usar caracteres para establecer la visibilidad que les correspondan:
+
+| Character | Icon for field | Icon for method | Visibility   |
+|-----------|----------------|-----------------|--------------|
+| -         | private        | private         | Privada      |
+| #         | protected      | protected       | Protegida    |
+| ~         | package private| package private | Paquete      |
+| +         | public         | public          | Pública      |
+
+## Ejemplo en PlantUML
+
+```plantuml
+@startuml
+class MiClase {
+    + atributoPublico: Tipo
+    - atributoPrivado: Tipo
+    # atributoProtegido: Tipo
+    
+    + metodoPublico(parametro: Tipo): Retorno
+    - metodoPrivado(parametro: Tipo): Retorno
+    # metodoProtegido(parametro: Tipo): Retorno
+}
+@enduml
+
+```
+
+Puedes desactivar esta característica usando el comando:
+```
+skinparam classAttributeIconSize 0
+```
+
+
+Este formato incluye:
+
+- Una tabla que resume los caracteres usados para definir la visibilidad.
+- Un ejemplo en PlantUML que muestra cómo se aplican estos caracteres.
+- Una nota sobre cómo desactivar la característica de iconos de visibilidad.
+
+¿Hay algo más que te gustaría agregar o ajustar en estos apuntes?
