@@ -13,20 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "df424a128879f3b7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Diagrama-Clases/Diagrama de Clases.md",
-                "mode": "source",
+                "file": "Guia_5/Ejercicio 3.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -81,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d8dd353bbe9007eb",
@@ -97,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Guia_5/Ejercicio 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Guia_5/Ejercicio 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Guia_5/Ejercicio 3.md"
               }
             }
           }
@@ -160,12 +149,22 @@
   },
   "active": "ed0cf29efb215317",
   "lastOpenFiles": [
-    "Sin título.canvas",
-    "README.md",
+    "docs/Diagrama-CU/Casos de Uso.md",
+    "Guia_4/Ejercicio 4.md",
     "examples/example.md",
-    "examples/Pasted image 20240530013120.png",
+    "docs/Diagrama-CU",
     "examples/Pasted image 20240530024838.png",
+    "examples/Pasted image 20240530013120.png",
+    "README.md",
+    "plantuml/ejemplo.md",
+    "PlantUML_Language_Reference_Guide_es.pdf",
     "docs/Diagrama-Clases/Diagrama de Clases.md",
+    "docs/Diagrama-Clases/Sin título.md",
+    "Guia_5/Ejercicio 3.md",
+    "plantuml",
+    "Guia_5",
+    "Guia_4",
+    "Sin título.canvas",
     "docs/Diagrama-Clases",
     "Pasted image 20240530013120.png",
     "examples/Sin título.md",
@@ -174,14 +173,8 @@
     "docs",
     "Pasted image 20240530002219.png",
     "plantuml/index.html",
-    "plantuml/ejemplo.md",
-    "plantuml/script.js",
-    "plantuml",
     "uml.md",
-    "node_modules/markdown-it-plantuml/lib/deflate.js",
-    "node_modules/markdown-it-plantuml/lib",
     "node_modules/markdown-it-plantuml/README.md",
-    "node_modules/markdown-it-plantuml/LICENSE",
     "node_modules/markdown-it/README.md",
     "node_modules/entities/readme.md",
     "node_modules/mdurl/README.md",

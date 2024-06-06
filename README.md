@@ -1,5 +1,23 @@
 Documentacion de Plantuml AQUI -> https://plantuml.com/es/guide
 
+
+---
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+
 En Obsidian, los complementos se llaman "plugins". Para agregar complementos de PlantUML en Obsidian, necesitarás utilizar un complemento que admita la renderización de diagramas PlantUML.
 
 Aquí hay algunos pasos generales para agregar complementos (plugins) en Obsidian:

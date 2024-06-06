@@ -1,5 +1,4 @@
 
-
 En PlantUML, puedes crear una clase utilizando la palabra clave `class` seguida del nombre de la clase. Dentro de la definición de la clase, puedes especificar atributos y métodos. Aquí tienes un ejemplo básico de cómo definir una clase en PlantUML:
 
 ```plantuml
@@ -50,21 +49,25 @@ En este caso:
 - Se define una segunda clase llamada `Empleado`.
 - Se indica una relación de herencia entre `Persona` y `Empleado` con `Persona <|-- Empleado`.
 
-# Relación entre Clases
+
+
+----
+## Relaciones
+
 
 Las relaciones entre clases se definen usando los siguientes símbolos:
 
-| Tipo        | Símbolo | Dibujo  |
-|-------------|---------|---------|
-| Extensión   | `<|--`  | <|--    |
-| Composición | `*--`   | *--     |
-| Agregación  | `o--`   | o--     |
+| Tipo        | Símbolo | Dibujo |     |     |
+| ----------- | ------- | ------ | --- | --- |
+| Extensión   | `<      | --`    | <   | --  |
+| Composición | `*--`   | *--    |     |     |
+| Agregación  | `o--`   | o--    |     |     |
 
 Es posible intercambiar `--` por `..` para tener líneas punteadas.
 
 ## Ejemplos de Relación entre Clases
 
-### Diagrama 1
+##### Diagrama 1
 
 ```plantuml
 @startuml
@@ -76,7 +79,7 @@ Class09 -- Class10
 @enduml
 ```
 
-### Diagrama 2
+##### Diagrama 2
 
 ```plantuml
 @startuml
@@ -88,7 +91,7 @@ Class19 <--* Class20
 @enduml
 ```
 
-### Diagrama 3
+##### Diagrama 3
 
 ```plantuml
 @startuml
@@ -101,7 +104,7 @@ Class29 ^-- Class30
 ```
 
 
-# Etiquetas y Cardinalidad en las Relaciones
+### Etiquetas y Cardinalidad en las Relaciones
 
 Es posible añadir etiquetas en las relaciones, usando `:` seguido del texto de la etiqueta. Para la cardinalidad, puede usar comillas dobles `""` en cada lado de la relación.
 
@@ -126,7 +129,7 @@ Car -- Person : < owns
 
 
 
-### Descripción de los Tipos de Relaciones
+###### Descripción de los Tipos de Relaciones
 
 - **Extensión (`<|--`)**: Indica que una clase hereda de otra.
 - **Composición (`*--`)**: Indica una relación de composición fuerte donde una clase es parte de otra y depende totalmente de ella.
@@ -134,7 +137,11 @@ Car -- Person : < owns
 - **Relación (`--`)**: Representa una relación general entre clases.
 - **Relación punteada (`..`)**: Representa una relación menos formal o sujeta a cambios entre clases.
 
-## Tipos de Lineas Rectangulares
+
+---
+
+## Estilos de Lineas
+### Tipos de Lineas Rectangulares
 
 Para hacer que las líneas de las relaciones en PlantUML sean rectangulares en lugar de diagonales, puedes utilizar la directiva `skinparam` para establecer el estilo de las flechas.
 
@@ -142,7 +149,24 @@ Para hacer que las líneas de las relaciones en PlantUML sean rectangulares en l
 skinparam linetype ortho
 ```
 
-# Definiendo la Visibilidad
+### Longitud de Separacion de Relaciones
+
+- `nodesep` controla la separación entre nodos (clases) verticalmente.
+```markdown
+skinparam nodesep 50
+```
+
+Separacion vertical entre relaciones se hace con `ranksep`
+
+```markdown
+skinparam ranksep 50
+```
+
+
+
+---
+
+## Definiendo la Visibilidad
 
 Cuando defines propiedades o métodos, puedes usar caracteres para establecer la visibilidad que les correspondan:
 
