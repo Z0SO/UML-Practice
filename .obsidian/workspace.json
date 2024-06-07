@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 398.50418853759766
   },
   "right": {
     "id": "d8dd353bbe9007eb",
@@ -146,7 +146,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "ed0cf29efb215317",
+  "active": "5d7818dddc84efdd",
   "lastOpenFiles": [
     "docs/Diagrama-CU/Casos de Uso.md",
     "Guia_4/Ejercicio 4.md",
