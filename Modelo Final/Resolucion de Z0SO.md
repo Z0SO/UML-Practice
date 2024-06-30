@@ -78,28 +78,21 @@ rectangle "GrowStronger" {
 ### Diagrama de Secuencia para el CU "*Contratar Servicio*"
 
 
-```plantuml
 
+```plantuml
 @startuml
 ' escondiendo el footbox
 hide footbox
 
-actor "Cliente" as cliente
 
+
+actor "Cliente" as cliente
+participant ":CTRL-CServ" as ctrlC
+--> ctrlC : "create()"
 
 participant ":Encargado" as enc
 participant ":Profesional" as prof
-
 participant ":GrowStronger" as GS
 
-
-
-participant ":CTRL-CServ" as ctrlC
-
-
-
-
-
 @enduml
-
 ```
