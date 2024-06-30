@@ -107,9 +107,8 @@ controlador --> ui  : create()
 
 
 
-participant ":Encargado" as enc
-participant ":Profesional" as prof
-participant ":GrowStronger" as GS
+participant ":GrowStronger" as sistema
+
 
 participant "CTRL-Session" as autenticacion
 
@@ -134,7 +133,18 @@ ui -> cliente : mostrarFormularioPago()
 cliente --> ui : formularioPago
 ui --> controlador : formularioPago
 
+' solicitar la opcion de tratamiento
+controlador -> ui : solicitarTratamiento()
+ui -> cliente : mostrarTratamiento()
+cliente --> ui : tratamiento
+ui --> controlador : tratamiento
 
+
+controlador -> sistema: crearSolicitud(formularioDP, formularioPago, tratamiento)
+
+
+
+' el sistema debe crear la solicitud
 
 
 
