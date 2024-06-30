@@ -10,17 +10,31 @@
 
 left to right direction
 
-actor "cliente" as cliente
+actor "Usuario" as usuario
+
+actor "Cliente" as cliente
+actor "Profesional" as profesional
+actor "Encargado" as encargado
+
+usuario <|-- cliente
+usuario <|-- profesional
+usuario <|-- encargado
 
 rectangle "GrowStronger" {
 
     usecase "Iniciar Sesion" as IS
+    usuario -- IS
 
 
-    cliente -- IS
+    ' parte clientes
+
+
+
+    ' parte profesional
 
 
 }
+
 
 @enduml
 ```
