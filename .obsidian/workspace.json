@@ -11,9 +11,11 @@
             "id": "ed0cf29efb215317",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PlantUML_Language_Reference_Guide_es.pdf"
+                "file": "Modelo Final/Resolucion de Z0SO.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -67,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.50418853759766
+    "width": 398.50418853759766,
+    "collapsed": true
   },
   "right": {
     "id": "d8dd353bbe9007eb",
@@ -83,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PlantUML_Language_Reference_Guide_es.pdf",
+                "file": "Modelo Final/Resolucion de Z0SO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PlantUML_Language_Reference_Guide_es.pdf",
+                "file": "Modelo Final/Resolucion de Z0SO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PlantUML_Language_Reference_Guide_es.pdf"
+                "file": "Modelo Final/Resolucion de Z0SO.md"
               }
             }
           }
@@ -146,9 +149,9 @@
   },
   "active": "ed0cf29efb215317",
   "lastOpenFiles": [
+    "PlantUML_Language_Reference_Guide_es.pdf",
     "04 - Guia TP - Modelado de Casos de Uso.pdf",
     "Modelo Final/Resolucion de Z0SO.md",
-    "PlantUML_Language_Reference_Guide_es.pdf",
     "Modelo Final/20220303 - FinalPractico.pdf",
     "Modelo Final",
     "README.md",

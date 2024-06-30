@@ -81,6 +81,8 @@ rectangle "GrowStronger" {
 ```plantuml
 
 @startuml
+' escondiendo el footbox
+hide footbox
 
 actor "Cliente" as cliente
 
@@ -93,6 +95,9 @@ participant ":GrowStronger" as GS
 
 
 participant ":CTRL-CServ" as ctrlC
+
+
+
 
 
 @enduml
