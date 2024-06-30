@@ -84,21 +84,28 @@ rectangle "GrowStronger" {
 ' Escondiendo el footbox
 hide footbox
 
+skinparam participant {
+  RoundCorner 0
+}
+
 actor "Cliente" as cliente
 
-' Definimos un boundary para representar un método externo
-boundary "Método Externo" as metodoExterno
-
-participant ":CTRL-CServ" as ctrlC
-
-metodoExterno -> ctrlC : "create()"
-create ctrlC
+' Creación de participantes
+create ":CTRL-CServ" as controlador
+create ":UI-Cliente" as ui
 
 participant ":Encargado" as enc
 participant ":Profesional" as prof
 participant ":GrowStronger" as GS
+participant "CTRL-Session" as autenticacion
+create "   " as externo
+
+' Mensajes entre participantes
+externo -> controlador : create()
+controlador -> ui : create()
 
 @enduml
+
 
 
 ```
