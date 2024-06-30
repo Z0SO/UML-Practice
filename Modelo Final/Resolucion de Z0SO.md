@@ -35,20 +35,34 @@ rectangle "GrowStronger" {
 
     ' parte clientes
     usecase "Contratar Servicio" as CS
-
-
+    usecase "Seleccionar Membresia" as SeleccMem
+    usecase "Cancelar Membresia" as cancelMem
+    cliente -- CS
+    cliente -- SeleccMem
+    cliente -- cancelMem
 
     ' parte profesional
     usecase "Evaluar Formulario" as EF
-    usecase "Asignar Farmacia" as AF
+    usecase "Programar Videollamada" as ProgVid
 
+    EF -left- ProgVid: <<extend>>
     profesional -- EF
-    profesional -- AF
+
+
+    ' parte encargado
+    usecase "Asignar Profesional" as AsignarProf
+    usecase "Asignar Farmacia" as AF
+    usecase "Evaluar Solicitud de Cliente" as ESC
+    usecase "Visualizar Clientes Asignados" as VCA
+
+    encargado -- AF
+    encargado -- AsignarProf
+    encargado -- ESC
+    encargado -- VCA
+
 
     ' actor secundario farmacia
     farmacia -up- AF
-
-
 
 }
 
