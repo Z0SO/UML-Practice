@@ -81,18 +81,24 @@ rectangle "GrowStronger" {
 
 ```plantuml
 @startuml
-' escondiendo el footbox
+' Escondiendo el footbox
 hide footbox
 
-
-
 actor "Cliente" as cliente
+
+' Definimos un boundary para representar un método externo
+boundary "Método Externo" as metodoExterno
+
 participant ":CTRL-CServ" as ctrlC
---> ctrlC : "create()"
+
+metodoExterno -> ctrlC : "create()"
+create ctrlC
 
 participant ":Encargado" as enc
 participant ":Profesional" as prof
 participant ":GrowStronger" as GS
 
 @enduml
+
+
 ```
