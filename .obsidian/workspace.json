@@ -13,7 +13,13 @@
             "state": {
               "type": "pdf",
               "state": {
+<<<<<<< HEAD
                 "file": "PlantUML_Language_Reference_Guide_es.pdf"
+=======
+                "file": "Guia_5/Ejercicio 3.md",
+                "mode": "source",
+                "source": false
+>>>>>>> b9d1a0b163f0e4e050b14f82307b8d7dd997ed51
               }
             }
           }
@@ -67,7 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.50418853759766
+    "width": 500.5
   },
   "right": {
     "id": "d8dd353bbe9007eb",
@@ -146,6 +152,7 @@
   },
   "active": "ed0cf29efb215317",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "examples/example.md",
     "PlantUML_Language_Reference_Guide_es.pdf",
     "Guia_5/Ejercicio 3.md",
@@ -153,7 +160,14 @@
     "docs/Diagrama-CU/Casos de Uso.md",
     "Guia_4/Ejercicio 4.md",
     "docs/Diagrama-CU",
+=======
+    "Guia_4/Ejercicio 4.md",
+    "Guia_5/Ejercicio 3.md",
+>>>>>>> b9d1a0b163f0e4e050b14f82307b8d7dd997ed51
     "examples/Pasted image 20240530024838.png",
+    "examples/example.md",
+    "docs/Diagrama-CU/Casos de Uso.md",
+    "docs/Diagrama-CU",
     "examples/Pasted image 20240530013120.png",
     "plantuml/ejemplo.md",
     "docs/Diagrama-Clases/Diagrama de Clases.md",
