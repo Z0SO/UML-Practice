@@ -16,21 +16,38 @@ actor "Cliente" as cliente
 actor "Profesional" as profesional
 actor "Encargado" as encargado
 
-usuario <|-- cliente
 usuario <|-- profesional
 usuario <|-- encargado
 
-rectangle "GrowStronger" {
+' tambien se requiere un actor secundario Farmacia
 
+actor "Farmacia" as farmacia
+
+
+
+
+rectangle "GrowStronger" {
+    
+    ' caso de uso de usuario
     usecase "Iniciar Sesion" as IS
     usuario -- IS
 
 
     ' parte clientes
+    usecase "Contratar Servicio" as CS
 
 
 
     ' parte profesional
+    usecase "Evaluar Formulario" as EF
+    usecase "Asignar Farmacia" as AF
+
+    profesional -- EF
+    profesional -- AF
+
+    ' actor secundario farmacia
+    farmacia -up- AF
+
 
 
 }
