@@ -20,9 +20,12 @@ usuario <|-- profesional
 usuario <|-- encargado
 
 ' tambien se requiere un actor secundario Farmacia
-
 actor "Farmacia" as farmacia
 
+' para mi los usuarios para el sistema deben estar logueados si o si
+' por lo que se debe iniciar sesion
+
+usuario <|-- cliente
 
 
 
@@ -44,21 +47,22 @@ rectangle "GrowStronger" {
     ' parte profesional
     usecase "Evaluar Formulario" as EF
     usecase "Programar Videollamada" as ProgVid
+    usecase "Visualizar Clientes Asignados" as VCA
 
-    EF -left- ProgVid: <<extend>>
+    profesional -- VCA
     profesional -- EF
+    '---- parte del actor secundario
+    EF -left- ProgVid: <<extend>>
 
 
     ' parte encargado
     usecase "Asignar Profesional" as AsignarProf
     usecase "Asignar Farmacia" as AF
     usecase "Evaluar Solicitud de Cliente" as ESC
-    usecase "Visualizar Clientes Asignados" as VCA
 
     encargado -- AF
     encargado -- AsignarProf
     encargado -- ESC
-    encargado -- VCA
 
 
     ' actor secundario farmacia
@@ -68,4 +72,29 @@ rectangle "GrowStronger" {
 
 
 @enduml
+```
+
+
+### Diagrama de Secuencia para el CU "*Contratar Servicio*"
+
+
+```plantuml
+
+@startuml
+
+actor "Cliente" as cliente
+
+
+participant ":Encargado" as enc
+participant ":Profesional" as prof
+
+participant ":GrowStronger" as GS
+
+
+
+participant ":CTRL-CServ" as ctrlC
+
+
+@enduml
+
 ```
