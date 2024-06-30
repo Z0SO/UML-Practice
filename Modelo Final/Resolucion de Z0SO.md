@@ -78,34 +78,69 @@ rectangle "GrowStronger" {
 ### Diagrama de Secuencia para el CU "*Contratar Servicio*"
 
 
+> tener en cuenta que primero se le pide un formulario de datos personales y despues un formulario de pago
+
 
 ```plantuml
 @startuml
 ' Escondiendo el footbox
+
 hide footbox
 
 skinparam participant {
   RoundCorner 0
 }
 
+
+
+create "   " as externo
+
+
+create ":CTRL-CServ" as controlador
+externo --> controlador : create()
+
+
 actor "Cliente" as cliente
 
-' Creación de participantes
-create ":CTRL-CServ" as controlador
 create ":UI-Cliente" as ui
+controlador --> ui  : create()
+
+
 
 participant ":Encargado" as enc
 participant ":Profesional" as prof
 participant ":GrowStronger" as GS
-participant "CTRL-Session" as autenticacion
-create "   " as externo
 
-' Mensajes entre participantes
-externo -> controlador : create()
-controlador -> ui : create()
+participant "CTRL-Session" as autenticacion
+
+' solicita pago
+controlador -> ui : mostrarOpciones()
+ui -> cliente : mostrarOpciones()
+
+cliente --> ui : opcion
+ui --> controlador : opcion
+
+' solicitar el formulario de registro de usuario
+controlador -> ui : solicitarDP()
+ui -> cliente : mostrarFormularioDP()
+
+cliente --> ui : formularioDP
+ui --> controlador : formularioDP
+
+' solicitar el formulario de pago
+controlador -> ui : solicitarFormularioPago()
+ui -> cliente : mostrarFormularioPago()
+
+cliente --> ui : formularioPago
+ui --> controlador : formularioPago
+
+
+
+
+
+
 
 @enduml
-
 
 
 ```
