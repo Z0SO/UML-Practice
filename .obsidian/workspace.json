@@ -11,11 +11,9 @@
             "id": "ed0cf29efb215317",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Guia_5/Ejercicio 3.md",
-                "mode": "preview",
-                "source": false
+                "file": "PlantUML_Language_Reference_Guide_es.pdf"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Guia_5/Ejercicio 3.md",
+                "file": "PlantUML_Language_Reference_Guide_es.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Guia_5/Ejercicio 3.md",
+                "file": "PlantUML_Language_Reference_Guide_es.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Guia_5/Ejercicio 3.md"
+                "file": "PlantUML_Language_Reference_Guide_es.pdf"
               }
             }
           }
@@ -146,20 +144,20 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "5d7818dddc84efdd",
+  "active": "ed0cf29efb215317",
   "lastOpenFiles": [
+    "examples/example.md",
+    "PlantUML_Language_Reference_Guide_es.pdf",
+    "Guia_5/Ejercicio 3.md",
+    "README.md",
     "docs/Diagrama-CU/Casos de Uso.md",
     "Guia_4/Ejercicio 4.md",
-    "examples/example.md",
     "docs/Diagrama-CU",
     "examples/Pasted image 20240530024838.png",
     "examples/Pasted image 20240530013120.png",
-    "README.md",
     "plantuml/ejemplo.md",
-    "PlantUML_Language_Reference_Guide_es.pdf",
     "docs/Diagrama-Clases/Diagrama de Clases.md",
     "docs/Diagrama-Clases/Sin título.md",
-    "Guia_5/Ejercicio 3.md",
     "plantuml",
     "Guia_5",
     "Guia_4",

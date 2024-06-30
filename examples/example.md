@@ -86,3 +86,13 @@ join2 --> [*] : from join\nto end
 
 
 ```
+
+
+
+```plantuml
+@startuml 
+autonumber
+Lautaro -> Ariano : saludo('hola ariano') 
+Lautaro <- Ariano : resSaludo('Hola lautaro')
+@endum
+```

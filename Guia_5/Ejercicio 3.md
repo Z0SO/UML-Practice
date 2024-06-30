@@ -69,14 +69,14 @@ class "Libro" {
 }
 
 class "Prestamo" {
-    - idPrestamo: int
+    + idPrestamo: int
     - fechaPrestamo: Date
     - fechaDevolucion: Date
     - estado: String
     - penalizacion: double
 
-    + getIdPrestamo(): int
-    + getFechaPrestamo(): Date
+    - getIdPrestamo(): int
+    - getFechaPrestamo(): Date
     + getFechaDevolucion(): Date
     + getEstado(): String
     + getPenalizacion(): double
@@ -88,7 +88,7 @@ class Ejemplar {
 }
 
 ' class "Bibliotecario" {
-'     - nombre: String
+'     + nombre: String
 '     - apellido: String
 '     - dni: String
 '     - direccion: String
