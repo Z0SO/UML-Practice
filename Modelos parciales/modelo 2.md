@@ -151,17 +151,18 @@ participant "[j]LTJ:Jugador" as jugadorLTJ
 participant "[e]LTE:Equipo" as equipoLTE
 
 
-participant ":CTRL-autenticacion" as auth
+' participant ":CTRL-autenticacion" as auth
 
 
 controlador --> ui : create()
 
+controlador -> ui : verificarJugador()
+ui -> jugador : solicitarMail()
+jugador --> ui : mail
+ui -> jugador : solicitarContraseña()
+jugador --> ui : pwd
 
-' el jugador debe estar autenticado
-
-controlador -> auth : checkAuth()
-auth --> controlador : autenticado
-
+ui --> controlador : verificarJugador(): mail, pwd
 
 ' indicar el nombre del equipo y la clave de inscripción proporcionada por el responsable del equipo
 
@@ -182,8 +183,19 @@ controlador -> sistema : buscarEquipo(equipo, clave)
 
 ' armar un for each para iterar sobre los equipos y buscar el equipo que coincida con el nombre y la clave
 
+
 loop for each e in LTE
-    
+   sistema -> e : getNombre()
+    e --> sistema : nombre
+    sistema -> e : getClave()
+    e --> sistema : clave
+
+    ' si coniciden los nombres se tendria que agregar al equipo el jugador
+    alt (e.getNombre() == equipo) && (e.getClave() == clave) && (e.cantJugadores() < 7)
+        
+    end
+
+end
 
 @enduml
 ```
