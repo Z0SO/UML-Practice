@@ -148,8 +148,10 @@ participant ":Off-Side" as sistema
 
 participant "[j]LTJ:Jugador" as jugadorLTJ
 
-participant "[e]LTE:Equipo" as equipoLTE
+participant "[e]LTE:Equipo" as e
 
+
+participant "jug:Jugador" as jug
 
 ' participant ":CTRL-autenticacion" as auth
 
@@ -159,10 +161,28 @@ controlador --> ui : create()
 controlador -> ui : verificarJugador()
 ui -> jugador : solicitarMail()
 jugador --> ui : mail
-ui -> jugador : solicitarContraseña()
-jugador --> ui : pwd
 
-ui --> controlador : verificarJugador(): mail, pwd
+
+ui --> controlador :  mail
+
+controlador -> sistema : buscarJugador(mail)
+
+loop for each j in LTJ
+    sistema -> jugadorLTJ : getMail()
+    jugadorLTJ --> sistema : j_mail
+
+    opt mail == j_mail
+        jugadorLTJ --> sistema : jug
+    end
+end
+
+sistema --> controlador : buscarJugador(mail):jug
+
+
+controlador -> ui : solicitarContraseña()
+ui -> jugador : solicitarContraseña()
+jugador --> ui : contraseña
+ui --> controlador : contraseña
 
 ' indicar el nombre del equipo y la clave de inscripción proporcionada por el responsable del equipo
 
@@ -174,28 +194,37 @@ jugador --> ui : equipo
 ui -> jugador : solicitarClave()
 jugador --> ui : clave
 
-ui --> controlador : solictarDatos(): mail, clave
+ui --> controlador : solictarEquipo(): equipo, clave
 
 
 ' hacer la busqueda de el equipo que 
-
 controlador -> sistema : buscarEquipo(equipo, clave)
-
-' armar un for each para iterar sobre los equipos y buscar el equipo que coincida con el nombre y la clave
-
 
 loop for each e in LTE
    sistema -> e : getNombre()
-    e --> sistema : nombre
+    e --> sistema : e_equipo
     sistema -> e : getClave()
-    e --> sistema : clave
+    e --> sistema : e_clave
 
     ' si coniciden los nombres se tendria que agregar al equipo el jugador
-    alt (e.getNombre() == equipo) && (e.getClave() == clave) && (e.cantJugadores() < 7)
-        
+    alt (equipo == e_equipo) && (clave == e_clave) && (e.cantJugadores() < 7)
+        sistema -> e : add(jug)
+        e -> sistema : void
+    else
+        sistema -> controlador : error()
     end
 
 end
+sistema --> controlador : buscarEquipo(equipo, clave):void
+
+controlador -> ui : mostrarConfirmacion()
+ui -> jugador : InscripciónCorrecta
+
+' destroy desde controlador a la ui
+controlador -> ui : destroy()
+destroy ui
+
+
 
 @enduml
 ```
