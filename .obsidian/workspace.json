@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Modelos parciales/parciales.md",
+                "file": "Modelos parciales/modelo 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d8dd353bbe9007eb",
@@ -97,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Modelos parciales/parciales.md",
+                "file": "Modelos parciales/modelo 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Modelos parciales/parciales.md",
+                "file": "Modelos parciales/modelo 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Modelos parciales/parciales.md"
+                "file": "Modelos parciales/modelo 2.md"
               }
             }
           }
@@ -160,8 +159,9 @@
   },
   "active": "c2efb0a1f25857be",
   "lastOpenFiles": [
+    "Modelos parciales/parciales modelo 1.md",
+    "Modelos parciales/modelo 2.md",
     "PlantUML_Language_Reference_Guide_es.pdf",
-    "Modelos parciales/parciales.md",
     "Modelo Final/Resolucion de Z0SO.md",
     "Modelos parciales",
     "04 - Guia TP - Modelado de Casos de Uso.pdf",
