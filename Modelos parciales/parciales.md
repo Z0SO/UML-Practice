@@ -50,14 +50,112 @@ internauta <|-- admin
 
 rectangle "Beautiful" {
 
-    usecase "iniciar sesion" as is
-
+    ' parte del internauta
+    usecase "Iniciar Sesion" as is
     internauta -- is
 
 
+
+
+    ' parte Cliente
+    usecase "Reservar Servicio" as reservarServicio
+    cliente -- reservarServicio
+
+    usecase "Realizar Consultas" as realizarConsultas
+    cliente -- realizarConsultas
+
+    usecase "Consultar Servicios Realizados" as consultarServicios
+    cliente -- consultarServicios
+
+    usecase "Habilitar Aviso de Turno" as habilitarAviso
+    cliente -- habilitarAviso
+
+
+
+    ' parte admin
+    usecase "Ver Turnos" as verTurnos
+    admin -- verTurnos
+
+    usecase "Asignar Especialistas" as asignarEspecialistas
+    admin -- asignarEspecialistas
+
+    usecase "Solicitar Informes" as solicitarInformes
+    admin -- solicitarInformes
+}
+
+```
+
+
+2.2 diagrama de clases
+
+```plantuml
+
+@startuml
+
+class Usuario {
+    - nombre: String
+    - apellido: String
+    - email: String
+    - telefono: String
+    - direccion: String
+    - usuario: String
+    - password: String
+}
+
+class Cliente {
+    - usuario: Usuario
+    - turnos: List<Turno>
+    - serviciosRealizados: List<Servicio>
+    - aviso: Boolean
+
+    + reservarTurno()
+    + realizarConsulta()
+    + consultarServiciosRealizados()
+    + habilitarAviso()
+}
+
+class Especialista {
+    - nombre: String
+    - apellido: String
+    - email: String
+    - telefono: String
+    - direccion: String
+    - usuario: String
+    - password: String
+    - servicios: List<Servicio>
+}
+
+class Servicio {
+    - nombre: String
+    - descripcion: String
+    - precio: Double
+    - duracion: Integer
+    - observaciones: String
+    - tipo: String
+    - especialista: Especialista
+ 
+    + reservarTurno()
+}
+
+class Turno {
+    - fecha: Date
+    - hora: Time
+    - servicio: Servicio
+    - cliente: Cliente
+    - especialista: Especialista
+    - estado: String
+    - aviso: Boolean
+}
+
+class Informe {
+    - serviciosRealizados: List<Servicio>
+    - total: Double
 }
 
 
 
-```
 
+
+@enduml
+
+```
