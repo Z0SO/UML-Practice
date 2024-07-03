@@ -150,6 +150,7 @@ participant "[j]LTJ:Jugador" as jugadorLTJ
 
 participant "[e]LTE:Equipo" as e
 
+participant "i_equipo:Equipo" as equipo
 
 ' participant ":CTRL-autenticacion" as auth
 
@@ -157,7 +158,7 @@ participant "[e]LTE:Equipo" as e
 controlador --> ui : create()
 
 controlador -> ui : verificarJugador()
-ui -> jugador : solicitarMail()
+ui -> jugador : solicitarMail
 jugador --> ui : mail
 
 
@@ -206,8 +207,8 @@ loop for each e in LTE
 
     ' si coniciden los nombres se tendria que agregar al equipo el jugador
     alt (equipo == e_equipo) && (clave == e_clave) && (e.cantJugadores() < 7)
-        sistema -> e : add(j)
-        e -> sistema : void
+        sistema -> equipo : add(j)
+        equipo --> sistema : void
     else
         sistema -> controlador : error()
     end
@@ -216,7 +217,7 @@ end
 sistema --> controlador : buscarEquipo(equipo, clave):void
 
 controlador -> ui : mostrarConfirmacion()
-ui -> jugador : InscripciónCorrecta
+ui -> jugador : Inscripción Correcta
 
 ' destroy desde controlador a la ui
 controlador -> ui : destroy()
