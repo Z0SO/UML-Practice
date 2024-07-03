@@ -9,9 +9,9 @@ Las consultas en linea  con los especialistas podrían realizarse en horarios de
 
 Al iniciar, deberá seleccionar que tipo de consulta se quiere realizar, indicar la forma de pago en la que se realizara el **pago de la consulta** (transferencia, tarjeta de crédito). Una vez realizado esto, se habilitara el chatbox para iniciar la consulta
 
-La reserva de turnos para los servicios de la estética se puede realizar en cualquier momento.
+La **reserva de turnos** para los servicios de la estética se puede realizar en cualquier momento.
 
-Para poder realizarlo debera seleccionar el servicio que se quiere tomar, completar las observaciones al servicio (por ejemplo, si es alérgica a algún producto, si no lo sabe también debería indicarlo), características solicitadas según el tipo de servicio (en caso de que sea depilacion debera indicarse la zona de cuerpo a depilar, para belleza de manos si se realiza esmaltado comun, semipermanente, kapping o esculpida, perfilado con o sin tinte). De acuerdo con el servicio seleccionado tambien debera habilitarse los turnos disponibles.
+Para poder realizarlo debera seleccionar el servicio que se quiere tomar, completar las **observaciones** al servicio (por ejemplo, si es alérgica a algún producto, si no lo sabe también debería indicarlo), **características** solicitadas según el tipo de servicio (en caso de que sea depilacion debera indicarse la zona de cuerpo a depilar, para belleza de manos si se realiza esmaltado comun, semipermanente, kapping o esculpida, perfilado con o sin tinte). De acuerdo con el servicio seleccionado tambien debera habilitarse los turnos disponibles.
 Seleccionar dia y horario. El turno quedara definitivamente reservado cuando al menos se haga el pago del 50% del servicio requerido.
 
 El cliente **podra habilitar el servicio de aviso del turno asignado**, de esta manera recibira en su celular o correo electronico (segun haya seleccionado) la confirmacion del turno y el aviso de su proximo turno. 
