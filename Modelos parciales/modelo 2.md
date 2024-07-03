@@ -151,8 +151,6 @@ participant "[j]LTJ:Jugador" as jugadorLTJ
 participant "[e]LTE:Equipo" as e
 
 
-participant "jug:Jugador" as jug
-
 ' participant ":CTRL-autenticacion" as auth
 
 
@@ -171,8 +169,8 @@ loop for each j in LTJ
     sistema -> jugadorLTJ : getMail()
     jugadorLTJ --> sistema : j_mail
 
-    opt mail == j_mail
-        jugadorLTJ --> sistema : jug
+    break mail == j_mail
+        jugadorLTJ --> sistema : j
     end
 end
 
@@ -208,7 +206,7 @@ loop for each e in LTE
 
     ' si coniciden los nombres se tendria que agregar al equipo el jugador
     alt (equipo == e_equipo) && (clave == e_clave) && (e.cantJugadores() < 7)
-        sistema -> e : add(jug)
+        sistema -> e : add(j)
         e -> sistema : void
     else
         sistema -> controlador : error()
@@ -224,6 +222,8 @@ ui -> jugador : InscripciónCorrecta
 controlador -> ui : destroy()
 destroy ui
 
+controlador <--[ : destroy()
+destroy controlador
 
 
 @enduml
