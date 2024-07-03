@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d8dd353bbe9007eb",
@@ -159,9 +160,10 @@
   },
   "active": "c2efb0a1f25857be",
   "lastOpenFiles": [
-    "Modelos parciales/parciales modelo 1.md",
-    "Modelos parciales/modelo 2.md",
     "PlantUML_Language_Reference_Guide_es.pdf",
+    "Modelos parciales/modelo 2.md",
+    "Modelos parciales/parciales.md",
+    "Modelos parciales/parciales modelo 1.md",
     "Modelo Final/Resolucion de Z0SO.md",
     "Modelos parciales",
     "04 - Guia TP - Modelado de Casos de Uso.pdf",
