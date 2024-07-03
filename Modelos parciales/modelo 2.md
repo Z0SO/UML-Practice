@@ -103,3 +103,28 @@ Cada jugador del equipo podrá:
 
 1. Diagrama de Casos de Uso
 
+```plantuml
+@startuml
+left to right direction
+
+actor "Administrador del Club" as admin
+
+' este es el actor responsable de la inscripción del equipo ya que puede o no ser jugador
+actor "Usuario" as usuario
+
+actor "Jugador" as jugador
+
+
+usuario <|-- jugador
+
+
+rectangle "Off-Side"{
+
+    'casos de uso de administrador   
+    admin -- (Cargar Información del Torneo)
+
+}
+
+
+@enduml
+```
