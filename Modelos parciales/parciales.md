@@ -90,19 +90,21 @@ rectangle "Beautiful" {
 
 ```plantuml
 
+' diagrama de clases pertenecientes al caso de uso "Reservar Servicio"
+
 @startuml
 
-class Usuario {
+class "Beautiful" as sistema {
     - nombre: String
-    - apellido: String
-    - email: String
-    - telefono: String
-    - direccion: String
-    - usuario: String
-    - password: String
+    - servicios: LTS<Servicio>
+    - turnos: LTT<Turno>
+    - clientes: LTC<Cliente>
+
+    + iniciarSesion()
 }
 
-class Cliente {
+
+class "Cliente" as cliente {
     - usuario: Usuario
     - turnos: List<Turno>
     - serviciosRealizados: List<Servicio>
@@ -114,18 +116,8 @@ class Cliente {
     + habilitarAviso()
 }
 
-class Especialista {
-    - nombre: String
-    - apellido: String
-    - email: String
-    - telefono: String
-    - direccion: String
-    - usuario: String
-    - password: String
-    - servicios: List<Servicio>
-}
 
-class Servicio {
+class "Servicio" as servicio {
     - nombre: String
     - descripcion: String
     - precio: Double
@@ -137,7 +129,7 @@ class Servicio {
     + reservarTurno()
 }
 
-class Turno {
+class "Turno" as turno {
     - fecha: Date
     - hora: Time
     - servicio: Servicio
@@ -147,11 +139,12 @@ class Turno {
     - aviso: Boolean
 }
 
-class Informe {
-    - serviciosRealizados: List<Servicio>
-    - total: Double
-}
 
+sistema "1" -- "1..*" cliente: > "tiene"
+
+sistema "1" -- "1..*" servicio: > "ofrece"
+
+sistema "1" -- "1..*" turno: > "genera"
 
 
 
