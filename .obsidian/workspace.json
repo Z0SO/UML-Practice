@@ -11,8 +11,12 @@
             "id": "cccb88d8e2d0e164",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Modelos parciales/modelo 2.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Modelos parciales/modelo 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Modelos parciales/modelo 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Modelos parciales/modelo 2.md"
+              }
             }
           }
         ]
@@ -141,9 +149,9 @@
   },
   "active": "cccb88d8e2d0e164",
   "lastOpenFiles": [
+    "Modelos parciales/parciales.md",
     "PlantUML_Language_Reference_Guide_es.pdf",
     "Modelos parciales/modelo 2.md",
-    "Modelos parciales/parciales.md",
     "Modelos parciales/parciales modelo 1.md",
     "Modelo Final/Resolucion de Z0SO.md",
     "Modelos parciales",

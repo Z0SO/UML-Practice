@@ -95,7 +95,7 @@ rectangle "Beautiful" {
 @startuml
 
 left to right direction
-skinparam linetype ortho
+skinparam linetype or   tho
 
 class "Beautiful" as sistema {
     - nombre: String
@@ -143,3 +143,5 @@ turno "1" --- "1" servicio: > "tiene"
 
 @enduml
 ```
+
+
