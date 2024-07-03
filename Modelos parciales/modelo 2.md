@@ -133,23 +133,41 @@ skinparam participant {
   RoundCorner 0
 }
 
+title Caso de uso: "Agregar Jugador a Equipo"
+
 
 actor "Jugador" as jugador
 
-participant ":CTRL-autenticacion" as auth
+participant ":UI-Inscripcion" as ui
 
 participant ":CTRL-Inscripcion" as controlador
+controlador <---[: create()
 
-participant "UI-Inscripcion" as ui
 
-participant "Off-Side" as sistema
+participant ":Off-Side" as sistema
 
 participant "[j]LTJ:Jugador" as jugadorLTJ
 
 participant "[e]LTE:Equipo" as equipoLTE
 
 
-title Caso de uso: "Agregar Jugador a Equipo"
+participant ":CTRL-autenticacion" as auth
+
+
+controlador --> ui : create()
+
+
+' el jugador debe estar autenticado
+
+controlador -> auth : checkAuth()
+auth --> controlador : autenticado
+
+
+
+
+
+
+
 
 @enduml
 ```
