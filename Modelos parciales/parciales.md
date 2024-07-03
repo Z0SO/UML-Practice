@@ -18,8 +18,8 @@ El cliente **podra habilitar el servicio de aviso del turno asignado**, de esta 
 
 Tambien, el cliente podra **consultar los servicios que se realizo** y entre los datos a mostrar debera indicarse el tiempo transcurrido de cada uno de los servicios.
 
-Desde la aplicacion, **el administrador podra ver los turnos** y realizar las asignaciones a los especialistas correspondientes. 
-Tambien, podra requerir informes: servicios realizados mensualmente por tipo de servicio, con los totales correspondientes.
+Desde la aplicacion, **el administrador podra ver los turnos** y **realizar las asignaciones a los especialistas** correspondientes. 
+Tambien, **podra requerir informes**: servicios realizados mensualmente por tipo de servicio, con los totales correspondientes.
 
 1. Modelado de Casos de uso (CU)
 	1. Modelar los casos de usos pertenecientes al dominio utilizando para ello un diagrama de CU
@@ -32,6 +32,30 @@ Tambien, podra requerir informes: servicios realizados mensualmente por tipo de 
 
 ```plantuml
 
+' diagrama de casos de uso
+
+
+left to right direction
+
+actor "Internauta" as internauta
+
+actor "Cliente" as cliente
+
+actor "Administrador" as admin
+
+internauta <|-- cliente
+internauta <|-- admin
+
+
+
+rectangle "Beautiful" {
+
+    usecase "iniciar sesion" as is
+
+    internauta -- is
+
+
+}
 
 
 

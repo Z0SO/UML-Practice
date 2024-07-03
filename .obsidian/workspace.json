@@ -11,6 +11,16 @@
             "id": "ed0cf29efb215317",
             "type": "leaf",
             "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PlantUML_Language_Reference_Guide_es.pdf"
+              }
+            }
+          },
+          {
+            "id": "c2efb0a1f25857be",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "Modelos parciales/parciales.md",
@@ -19,7 +29,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d8dd353bbe9007eb",
@@ -147,12 +157,12 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "ed0cf29efb215317",
+  "active": "c2efb0a1f25857be",
   "lastOpenFiles": [
-    "Modelo Final/Resolucion de Z0SO.md",
-    "Modelos parciales/parciales.md",
-    "Modelos parciales",
     "PlantUML_Language_Reference_Guide_es.pdf",
+    "Modelos parciales/parciales.md",
+    "Modelo Final/Resolucion de Z0SO.md",
+    "Modelos parciales",
     "04 - Guia TP - Modelado de Casos de Uso.pdf",
     "Modelo Final/20220303 - FinalPractico.pdf",
     "Modelo Final",
