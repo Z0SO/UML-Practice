@@ -94,6 +94,8 @@ rectangle "Beautiful" {
 
 @startuml
 
+skinparam linetype ortho
+
 class "Beautiful" as sistema {
     - nombre: String
     - servicios: LTS<Servicio>
@@ -124,15 +126,14 @@ class "Servicio" as servicio {
     - duracion: Integer
     - observaciones: String
     - tipo: String
-    - especialista: Especialista
- 
+
     + reservarTurno()
 }
 
 class "Turno" as turno {
     - fecha: Date
     - hora: Time
-    - servicio: Servicio
+
     - cliente: Cliente
     - especialista: Especialista
     - estado: String
@@ -140,15 +141,18 @@ class "Turno" as turno {
 }
 
 
+' relaciones con el sistema
 sistema "1" -- "1..*" cliente: > "tiene"
-
 sistema "1" -- "1..*" servicio: > "ofrece"
-
 sistema "1" -- "1..*" turno: > "genera"
 
+' relaciones con el cliente
+cliente "1" -- "1..*" turno: > "reserva"
+cliente "1" -- "1..*" servicio: > "solicita"
 
+' relaciones con el turno
+turno "1" -- "1" cliente: > "tiene"
 
 
 @enduml
-
 ```
