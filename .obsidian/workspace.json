@@ -18,6 +18,16 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "496e21245f43b6a8",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PlantUML_Language_Reference_Guide_es.pdf"
+              }
+            }
           }
         ]
       }
@@ -69,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d8dd353bbe9007eb",
@@ -149,9 +158,9 @@
   },
   "active": "cccb88d8e2d0e164",
   "lastOpenFiles": [
-    "Modelos parciales/parciales.md",
-    "Modelos parciales/modelo 2.md",
     "PlantUML_Language_Reference_Guide_es.pdf",
+    "Modelos parciales/modelo 2.md",
+    "Modelos parciales/parciales.md",
     "Modelos parciales/parciales modelo 1.md",
     "Modelo Final/Resolucion de Z0SO.md",
     "Modelos parciales",

@@ -163,11 +163,27 @@ controlador -> auth : checkAuth()
 auth --> controlador : autenticado
 
 
+' indicar el nombre del equipo y la clave de inscripción proporcionada por el responsable del equipo
+
+controlador -> ui : solicitarEquipo()
+
+ui -> jugador : solicitarEquipo()
+jugador --> ui : equipo
+
+ui -> jugador : solicitarClave()
+jugador --> ui : clave
+
+ui --> controlador : solictarDatos(): mail, clave
 
 
+' hacer la busqueda de el equipo que 
 
+controlador -> sistema : buscarEquipo(equipo, clave)
 
+' armar un for each para iterar sobre los equipos y buscar el equipo que coincida con el nombre y la clave
 
+loop for each e in LTE
+    
 
 @enduml
 ```
