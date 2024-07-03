@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Modelo Final/Resolucion de Z0SO.md",
+                "file": "Modelos parciales/parciales.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.50418853759766,
+    "width": 223.5,
     "collapsed": true
   },
   "right": {
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Modelo Final/Resolucion de Z0SO.md",
+                "file": "Modelos parciales/parciales.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Modelo Final/Resolucion de Z0SO.md",
+                "file": "Modelos parciales/parciales.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Modelo Final/Resolucion de Z0SO.md"
+                "file": "Modelos parciales/parciales.md"
               }
             }
           }
@@ -149,8 +149,10 @@
   },
   "active": "ed0cf29efb215317",
   "lastOpenFiles": [
-    "PlantUML_Language_Reference_Guide_es.pdf",
     "Modelo Final/Resolucion de Z0SO.md",
+    "Modelos parciales/parciales.md",
+    "Modelos parciales",
+    "PlantUML_Language_Reference_Guide_es.pdf",
     "04 - Guia TP - Modelado de Casos de Uso.pdf",
     "Modelo Final/20220303 - FinalPractico.pdf",
     "Modelo Final",
@@ -173,7 +175,6 @@
     "docs/Diagrama-Clases",
     "Pasted image 20240530013120.png",
     "examples/Sin título.md",
-    "examples",
     "Pasted image 20240530002219.png",
     "uml.md",
     "node_modules/markdown-it-plantuml/README.md",
