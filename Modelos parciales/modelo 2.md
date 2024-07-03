@@ -114,6 +114,7 @@ actor "Usuario" as usuario
 
 actor "Jugador" as jugador
 
+actor "Sistema bancario" as banco
 
 usuario <|-- jugador
 
@@ -122,7 +123,17 @@ rectangle "Off-Side"{
 
     'casos de uso de administrador   
     admin -- (Cargar Información del Torneo)
+    admin -- (Cargar Fixture del Torneo)
+    ' admin -- (Cancelar Torneo) // creo que forma parte del CU anterior
 
+    'casos de uso de usuario
+    usuario -- (Inscribir Equipo)
+
+    'casos de uso de jugador
+    jugador -- (Consultar Partidos)
+    jugador -- (Consultar Resultados)
+    jugador -- (Agregar Jugador a Equipo)
+    (Agregar Jugador a Equipo) -- banco
 }
 
 
