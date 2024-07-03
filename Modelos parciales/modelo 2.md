@@ -231,4 +231,28 @@ destroy controlador
 ```
 
 
-|
+
+3 Diagrama de clases
+
+```plantuml
+@startuml
+
+class "Off-Side" {
+
+    -nombre: String
+    -fecha: Date
+    -modalidad: String
+    -cantJugadores: [0..7]
+    -fechaLimite: Date
+    -arancel: Float
+    ' Listas de jugadores
+    -LTJ: List of Jugador
+    -LTE: List of Equipo
+    ' -------------------
+    +buscarJugador(mail): Jugador
+    +buscarEquipo(equipo, clave): void
+}
+
+
+@enduml
+```
