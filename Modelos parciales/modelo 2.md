@@ -175,11 +175,11 @@ loop for each j in LTJ
     end
 end
 
-sistema --> controlador : buscarJugador(mail):jug
+sistema --> controlador : buscarJugador(mail):j
 
 
 controlador -> ui : solicitarContraseña()
-ui -> jugador : solicitarContraseña()
+ui -> jugador : solicitarContraseña
 jugador --> ui : contraseña
 ui --> controlador : contraseña
 
@@ -187,10 +187,10 @@ ui --> controlador : contraseña
 
 controlador -> ui : solicitarEquipo()
 
-ui -> jugador : solicitarEquipo()
+ui -> jugador : solicitarEquipo
 jugador --> ui : equipo
 
-ui -> jugador : solicitarClave()
+ui -> jugador : solicitarClave
 jugador --> ui : clave
 
 ui --> controlador : solictarEquipo(): equipo, clave
@@ -206,7 +206,7 @@ loop for each e in LTE
     e --> sistema : e_clave
 
     ' si coniciden los nombres se tendria que agregar al equipo el jugador
-    alt (equipo == e_equipo) && (clave == e_clave) && (e.cantJugadores() < 7)
+    alt (equipo == e_equipo) && (clave == e_clave) && (e.cantJugadores() < 8)
         sistema -> equipo : add(j)
         equipo --> sistema : void
     else
@@ -237,12 +237,16 @@ destroy controlador
 ```plantuml
 @startuml
 
-class "Off-Side" {
+left to right direction
+
+skinparam linetype ortho
+
+class "Off-Side" as sistema {
 
     -nombre: String
     -fecha: Date
     -modalidad: String
-    -cantJugadores: [0..7]
+    
     -fechaLimite: Date
     -arancel: Float
     ' Listas de jugadores
@@ -252,6 +256,50 @@ class "Off-Side" {
     +buscarJugador(mail): Jugador
     +buscarEquipo(equipo, clave): void
 }
+
+class "Equipo" as equipo {
+    -nombre: String
+    -clave: String
+    -jugadores: List of Jugador
+    -cantJugadores: [0..7]
+    +add(j: Jugador): void
+    +cantJugadores(): int
+}
+
+class "Jugador" as jugador {
+    -dni: String
+    -nombre: String
+    -apellido: String
+    -email: String
+    -telefono: String
+    -fechaNacimiento: Date
+    +getMail(): String
+}
+
+
+class "UI-Inscripcion" as ui {
+    +solicitarMail(): String
+    +solicitarContraseña(): String
+    +solicitarEquipo(): String
+    +solicitarClave(): String
+    +mostrarConfirmacion(): void
+    +verificarJugador(): void
+}
+
+class "CTRL-Inscripcion" as controlador{
+    +create(): void
+    +error(): void
+}
+
+sistema "1" o-- "0..*" equipo
+
+sistema "1" o-- "0..7" jugador
+
+equipo "1" ---- "0..*" jugador: > Tiene
+
+ui -- controlador
+
+
 
 
 @enduml
