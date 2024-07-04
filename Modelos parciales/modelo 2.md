@@ -150,7 +150,7 @@ participant "[j]LTJ:Jugador" as jugadorLTJ
 
 participant "[e]LTE:Equipo" as e
 
-participant "i_equipo:Equipo" as equipo
+participant "e_equipo:Equipo" as equipo
 
 ' participant ":CTRL-autenticacion" as auth
 
