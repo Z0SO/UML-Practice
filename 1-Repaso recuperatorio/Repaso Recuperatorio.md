@@ -10,8 +10,9 @@ Consigna Para el escenario propuesto identificar las clases, sus atributos, mét
 
 @startuml
 
-class 
+class CliLab {
 
+}
 
 @enduml
 
