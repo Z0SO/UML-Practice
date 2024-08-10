@@ -11,21 +11,9 @@
             "id": "cccb88d8e2d0e164",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modelos parciales/modelo 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "496e21245f43b6a8",
-            "type": "leaf",
-            "state": {
               "type": "pdf",
               "state": {
-                "file": "PlantUML_Language_Reference_Guide_es.pdf"
+                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf"
               }
             }
           }
@@ -95,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Modelos parciales/modelo 2.md",
+                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Modelos parciales/modelo 2.md",
+                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Modelos parciales/modelo 2.md"
+                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf"
               }
             }
           }
@@ -158,32 +146,33 @@
   },
   "active": "cccb88d8e2d0e164",
   "lastOpenFiles": [
+    "1-Repaso recuperatorio/05 - Guia TP - Realización de CU 2021.pdf",
+    "1-Repaso recuperatorio/Repaso Recuperatorio.md",
+    "Repaso Recuperatorio.md",
+    "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
     "PlantUML_Language_Reference_Guide_es.pdf",
     "Modelos parciales/modelo 2.md",
+    "1-Repaso recuperatorio/04 - Guia TP - Modelado de Casos de Uso.pdf",
+    "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf",
+    "1-Repaso recuperatorio",
+    "05 - Guia TP - Realización de CU 2021.pdf",
+    "03 - Guia TP - Intro Interacciones.pdf",
+    "01 - Guia TP - Intro OO.pdf",
+    "Repaso Recuperatorio.md~",
     "Modelos parciales/parciales.md",
     "Modelos parciales/parciales modelo 1.md",
     "Modelo Final/Resolucion de Z0SO.md",
-    "Modelos parciales",
-    "04 - Guia TP - Modelado de Casos de Uso.pdf",
-    "Modelo Final/20220303 - FinalPractico.pdf",
-    "Modelo Final",
     "README.md",
-    "Sin título.md",
     "examples/example.md",
     "Guia_5/Ejercicio 3.md",
     "docs/Diagrama-CU/Casos de Uso.md",
     "Guia_4/Ejercicio 4.md",
-    "docs/Diagrama-CU",
     "examples/Pasted image 20240530024838.png",
     "examples/Pasted image 20240530013120.png",
     "plantuml/ejemplo.md",
     "docs/Diagrama-Clases/Diagrama de Clases.md",
     "docs/Diagrama-Clases/Sin título.md",
-    "plantuml",
-    "Guia_5",
-    "Guia_4",
     "Sin título.canvas",
-    "docs/Diagrama-Clases",
     "Pasted image 20240530013120.png",
     "examples/Sin título.md",
     "Pasted image 20240530002219.png",
