@@ -29,8 +29,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md",
+                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md",
+                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md"
+                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf"
               }
             }
           }
@@ -157,12 +156,12 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "5997508c1ea9ec8b",
+  "active": "cccb88d8e2d0e164",
   "lastOpenFiles": [
+    "1-Repaso recuperatorio/Repaso Recuperatorio.md",
     "1-Repaso recuperatorio/Repaso Recuperatorio.md~",
     "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
     "1-Repaso recuperatorio/05 - Guia TP - Realización de CU 2021.pdf",
-    "1-Repaso recuperatorio/Repaso Recuperatorio.md",
     "Repaso Recuperatorio.md",
     "PlantUML_Language_Reference_Guide_es.pdf",
     "Modelos parciales/modelo 2.md",
@@ -172,7 +171,6 @@
     "05 - Guia TP - Realización de CU 2021.pdf",
     "03 - Guia TP - Intro Interacciones.pdf",
     "01 - Guia TP - Intro OO.pdf",
-    "Repaso Recuperatorio.md~",
     "Modelos parciales/parciales.md",
     "Modelos parciales/parciales modelo 1.md",
     "Modelo Final/Resolucion de Z0SO.md",
