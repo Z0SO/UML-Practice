@@ -120,7 +120,7 @@ donde se registrarán dichos movimientos.
 
 @startuml
 
-skinparam linetype ortho
+'skinparam linetype ortho
 
 ' las clases son las siguientes
 ' Sarmiento
@@ -132,6 +132,8 @@ skinparam linetype ortho
 
 
 class sistema as "Sarmiento" {
+
+
 }
 
 class ventas as "Ventas" {
@@ -150,8 +152,31 @@ class tarjeta as "Tarjeta" {
 }
 
 
+class linea_de_compra as "Linea_de_Compra" {
+}
 
 
+
+' relaciones
+
+'SISTEMA'
+sistema "1" --- "0..*" ventas: > registra
+sistema "1" --- "0..*" clientes: > tiene
+
+
+'VENTAS'
+ventas "1" -- "1..*" linea_de_compra: > contiene
+
+'LINEA DE COMPRA'
+linea_de_compra "1" -- "1" libros: > involucra
+
+
+
+
+' RELACIONES DE CLIENTES
+clientes <|-- cliente_premium
+
+cliente_premium -left- tarjeta: > tiene
 
 
 
