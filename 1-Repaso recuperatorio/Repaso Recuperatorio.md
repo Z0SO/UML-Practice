@@ -14,7 +14,6 @@ class CliLab {
 
 
 
-
 }
 
 @enduml
