@@ -209,3 +209,92 @@ clientes <|-- cliente_premium
 @enduml
 
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ejercicio 5
+
+WGE es un juego de plataformas 2D en el que el jugador encarna al héroe que debe salvar al universo
+a través de 10 niveles y posee solo 3 vidas. Cada nivel cuenta con varios tipos de elementos 
+como los enemigos (monstruos, naves y tanques) que pueden moverse de manera autónoma, disparar,
+chocar, etc. o elementos del escenario con los que no se interactúa y están fijos,
+aunque pueden tener animaciones.
+
+
+
+```plantuml
+@startuml
+
+' las clases son las siguientes
+
+' sistema
+' jugador
+' enemigo 
+' nivel
+' elemento'
+
+
+
+class sistema as "Juego" {
+
+}
+
+
+class jugador as "Jugador" {
+
+}
+
+
+class enemigo as "Enemigo" {
+
+}
+
+class nivel as "Nivel" {
+
+
+}
+
+
+
+
+class elemento as "Elemento" {
+
+}
+
+
+
+
+'RELACIONES'
+
+sistema *-- jugador
+sistema *-- nivel
+sistema *-- elemento
+
+sistema *-- enemigo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml
+```
