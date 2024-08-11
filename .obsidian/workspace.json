@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d8dd353bbe9007eb",
@@ -159,9 +160,9 @@
   },
   "active": "5997508c1ea9ec8b",
   "lastOpenFiles": [
+    "1-Repaso recuperatorio/Repaso Recuperatorio.md~",
     "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
     "1-Repaso recuperatorio/Repaso Recuperatorio.md",
-    "1-Repaso recuperatorio/Repaso Recuperatorio.md~",
     "1-Repaso recuperatorio/05 - Guia TP - Realización de CU 2021.pdf",
     "Repaso Recuperatorio.md",
     "PlantUML_Language_Reference_Guide_es.pdf",

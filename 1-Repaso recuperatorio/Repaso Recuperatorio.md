@@ -1,4 +1,4 @@
-
+k
 
 2/4 Ejercicio 1
 
@@ -13,9 +13,16 @@ Consigna Para el escenario propuesto identificar las clases, sus atributos, mét
 class CliLab {
 
 
-
-
 }
+
+
+
+class Paciente {
+
+
+
+} 
+
 
 @enduml
 
