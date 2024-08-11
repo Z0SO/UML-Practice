@@ -90,3 +90,14 @@ class tipoanalisis as "Tipo_Analisis" {
 
 @enduml
 ```
+
+
+1 asocaicion simple
+2 herencia
+3 agregacion
+4 agregacion
+5 asociacion
+6 composicion
+7 asociacion
+8 composicion
+9 herencia
