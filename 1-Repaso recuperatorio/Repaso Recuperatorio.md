@@ -132,27 +132,54 @@ donde se registrarán dichos movimientos.
 
 
 class sistema as "Sarmiento" {
+    
+    - Nombre: String
+    - Direccion: String
+    - Telefono: String
+    - Correo: email
 
 
 }
 
 class ventas as "Ventas" {
+    - Fecha: Date
+    - Total: Float
+
 }
 
 class clientes as "Clientes" {
+    - DNI: String
+    - Nombre: String
+    - Apellido: String
+    - Direccion: String
+    - Telefono: String
+    - Correo: email
+    - Edad: Int
+
 }
 
 class libros as "Libros" {
+    - titulo: String
+    - autor: String
+    - editorial: String
+    - precio_unitario: Float
+    - cant_stock: Int
 }
+
 
 class cliente_premium as "Cliente_Premium" {
+    - id_premium: Int
+    - puntos: Int
+    
+
 }
 
-class tarjeta as "Tarjeta" {
-}
+
 
 
 class linea_de_compra as "Linea_de_Compra" {
+    
+
 }
 
 
@@ -176,13 +203,9 @@ linea_de_compra "1" -- "1" libros: > involucra
 ' RELACIONES DE CLIENTES
 clientes <|-- cliente_premium
 
-cliente_premium -left- tarjeta: > tiene
 
 
 
 @enduml
 
-
 ```
-
-
