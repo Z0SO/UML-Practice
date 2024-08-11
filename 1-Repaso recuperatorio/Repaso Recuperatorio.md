@@ -251,11 +251,24 @@ class sistema as "Juego" {
 
 
 class jugador as "Jugador" {
+    - vida: 1..3
+    - nombre: string 
+  
+    + saltar()
+    + mv_derecha() 
+    + mv_izq()
+    + agacharse()    
+    + attack()
+    + defenderse()
+
 
 }
 
 
 class enemigo as "Enemigo" {
+
+
+
 
 }
 
@@ -272,15 +285,44 @@ class elemento as "Elemento" {
 }
 
 
+class monstruo as "Monster" {
 
+}
+
+class nave as "Nave" {
+
+}
+
+class tanque as "Tanque" {
+
+}
 
 'RELACIONES'
 
 sistema *-- jugador
 sistema *-- nivel
-sistema *-- elemento
 
-sistema *-- enemigo
+
+
+
+nivel *-- enemigo
+nivel *-- elemento
+
+
+enemigo <|-- nave
+enemigo <|-- monstruo
+enemigo <|-- tanque
+
+
+
+
+
+
+
+
+
+
+
 
 
 
