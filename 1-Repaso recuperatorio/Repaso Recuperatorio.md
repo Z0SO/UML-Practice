@@ -101,3 +101,63 @@ class tipoanalisis as "Tipo_Analisis" {
 7 asociacion
 8 composicion
 9 herencia
+
+
+
+La librería “Sarmiento” es una empresa familiar dedicada a la venta de toda clase
+de libros, aunque se especializa en libros técnicos, actualmente posee un sistema
+donde se registra información acerca de sus clientes, consistente en DNI,
+nombre y apellido, dirección, teléfono, correo electrónico y edad,
+además se almacenan todas las ventas que realizan y los libros involucrados en
+cada una de ellas. Para competir con las grandes cadenas de librerías desean implementar
+un programa de fidelización, en el que los clientes “Premium” puedan acumular o
+canjear puntos en las compras que ellos realicen, a estos se les asignará una tarjeta
+donde se registrarán dichos movimientos.
+
+
+
+```plantuml
+
+@startuml
+
+skinparam linetype ortho
+
+' las clases son las siguientes
+' Sarmiento
+' ventas 
+' clientes
+' libros
+' cliente Premium
+' tarjeta
+
+
+class sistema as "Sarmiento" {
+}
+
+class ventas as "Ventas" {
+}
+
+class clientes as "Clientes" {
+}
+
+class libros as "Libros" {
+}
+
+class cliente_premium as "Cliente_Premium" {
+}
+
+class tarjeta as "Tarjeta" {
+}
+
+
+
+
+
+
+
+@enduml
+
+
+```
+
+
