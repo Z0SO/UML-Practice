@@ -14,10 +14,20 @@ skinparam linetype ortho
 
 ' paciente y medico son clases hijas de persona
 
-Persona <|-- Medico
-Persona <|-- Paciente
+persona <|-- medico
+persona <|-- paciente
+
+persona -- analisis: > realiza
+
+medico -- analisis: > solicita
 
 
+sistema "1" -- "0..*" analisis: > registra
+
+
+' relacion de composicion
+
+analisis *-- tipoanalisis
 
 
 
@@ -30,7 +40,12 @@ class sistema as "CliLab" {
 
 
 
-class Persona {
+class diagnostico as "Diagnostico" {}
+
+
+
+
+class persona as "Persona" {
 
 
 
@@ -38,26 +53,27 @@ class Persona {
 
 
 
-class Medico {
+class medico as "Medico" {
 
 
 }
 
 
-class Paciente {
+class paciente as "Paciente" {
     
 
 } 
 
-class Direccion {
+class direccion as "Direccion" {
+
 
 } 
 
 
-class Analisis {}
+class analisis as "Analisis" {}
 
 
-class TipoAnalisis {} 
+class tipoanalisis as "Tipo_Analisis" {} 
 
 
 
