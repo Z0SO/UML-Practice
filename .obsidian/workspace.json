@@ -29,7 +29,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -95,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
+                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
+                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf"
+                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md"
               }
             }
           }
@@ -156,11 +157,11 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "cccb88d8e2d0e164",
+  "active": "5997508c1ea9ec8b",
   "lastOpenFiles": [
+    "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
     "1-Repaso recuperatorio/Repaso Recuperatorio.md",
     "1-Repaso recuperatorio/Repaso Recuperatorio.md~",
-    "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
     "1-Repaso recuperatorio/05 - Guia TP - Realización de CU 2021.pdf",
     "Repaso Recuperatorio.md",
     "PlantUML_Language_Reference_Guide_es.pdf",
