@@ -436,9 +436,7 @@ skinparam participant {
 
 participant ":CliLab" as sistema
 
-participant "[pac]LTP:Paciente" as ltp
-
-participant "p:Paciente" as paciente
+participant "p:LTP:Paciente" as ltp
 
 
 
@@ -447,22 +445,41 @@ participant "p:Paciente" as paciente
 sistema <-[ : buscarPaciente(apellido)
 
 
+create "LTA:Paciente" as lta
+sistema -->  lta: create()
 
 loop for each LTP
 
-sistema -> ltp : getPaciente()
-ltp --> sistema: pac
+    sistema -> ltp : getPaciente()
+    ltp --> sistema: pac
 
-sistema -> paciente: getApellido()
+    sistema -> paciente: getApellido()
 
-paciente --> sistema : pac.apellido
+    paciente --> sistema : p.apellido
+
+
+    opt if apellido == p.apellido
+
+        'tendria que añadir al paciente aca
+        ' pero no se como carajo añadirlo
+
+
+        sistema -> lta: add()
+        
+    end
 
 
 ' ahora tendria que añadir ese paciente a la lista de todos los apellidos de ese paciente
 
-create "LTA:Paciente" as lta
 
-sistema -->  lta: create()
+end
+
+
+
+
+
+
+
 
 @enduml
 ```
