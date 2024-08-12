@@ -380,23 +380,37 @@ skinparam participant {
 
 
 participant ":CliLab" as sistema
-participant "LTM[m]:Medico" as ltm
+participant "[m]LTM:Medico" as ltm
 
 
 
 
 ' Parte del diagrama
 
-sistema <--[ : buscarMedico(matricula)
-
-sistema -> ltm : buscarMatricula(matricula)
+sistema <-[ : buscarMedico(matricula)
 
 loop for each m in LTM
 
+sistema -> ltm: getMatricula()
+ltm --> sistema: ltm_matricula
 
+
+    ' alt if matricula == ltm_matricula
+    '    ltm --> sistema : m 
+    
+    ' else
+    '     ltm --> sistema : void
+    ' end
+
+    opt if matricula == ltm_matricula
+        ltm --> sistema : m
+    end
 
 end
 
+]<-- sistema : m
 
 @enduml
 ```
+
+
