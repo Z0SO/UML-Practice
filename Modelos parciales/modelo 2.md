@@ -170,12 +170,17 @@ loop for each j in LTJ
     sistema -> jugadorLTJ : getMail()
     jugadorLTJ --> sistema : j_mail
 
-    break mail == j_mail
+    break    mail == j_mail
         jugadorLTJ --> sistema : j
     end
 end
 
+<<<<<<< HEAD
 sistema --> controlador : buscarJugador(mail):j
+=======
+
+sistema --> controlador : buscarJugador(mail):jug
+>>>>>>> aca9cccb2f29bbd860f44c7a3534461c4dc0a8fd
 
 
 controlador -> ui : solicitarContraseña()
@@ -225,6 +230,7 @@ destroy ui
 
 controlador <--[ : destroy()
 destroy controlador
+
 
 
 @enduml
