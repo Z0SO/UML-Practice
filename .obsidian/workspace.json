@@ -28,9 +28,18 @@
                 "file": "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf"
               }
             }
+          },
+          {
+            "id": "234b97a3daa14d15",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PlantUML_Language_Reference_Guide_es.pdf"
+              }
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf",
+                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf",
+                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf"
+                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md"
               }
             }
           }
@@ -158,9 +167,11 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "06e93ea74b2a8313",
+  "active": "31591e4cdb7b1eee",
   "lastOpenFiles": [
-    "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
-    "1-Repaso recuperatorio/Repaso Recuperatorio.md"
+    "PlantUML_Language_Reference_Guide_es.pdf",
+    "1-Repaso recuperatorio/Repaso Recuperatorio.md",
+    "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf",
+    "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf"
   ]
 }

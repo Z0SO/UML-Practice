@@ -418,3 +418,51 @@ end
 ```
 
 
+# Busqueda de pacientes por apellido
+
+- aqui se tendra que hacer un alista auxiliar por si encuentra mas de un paciente con el mismo apellido
+
+
+```plantuml
+@startuml
+
+
+hide footbox
+
+skinparam participant {
+  RoundCorner 0
+}
+
+
+participant ":CliLab" as sistema
+
+participant "[pac]LTP:Paciente" as ltp
+
+participant "p:Paciente" as paciente
+
+
+
+
+
+sistema <-[ : buscarPaciente(apellido)
+
+
+
+loop for each LTP
+
+sistema -> ltp : getPaciente()
+ltp --> sistema: pac
+
+sistema -> paciente: getApellido()
+
+paciente --> sistema : pac.apellido
+
+
+' ahora tendria que añadir ese paciente a la lista de todos los apellidos de ese paciente
+
+create "LTA:Paciente" as lta
+
+sistema -->  lta: create()
+
+@enduml
+```
