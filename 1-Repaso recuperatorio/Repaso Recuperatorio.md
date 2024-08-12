@@ -380,35 +380,39 @@ skinparam participant {
 
 
 participant ":CliLab" as sistema
-participant "[m]LTM:Medico" as ltm
+participant "LTM:Medico" as ltm
 
+participant "med:Medico" as medico
 
 
 
 ' Parte del diagrama
+' ESTO ES LA BUSQUEDA DE MANERA ELEMENTAL
+
+
+
 
 sistema <-[ : buscarMedico(matricula)
 
 loop for each m in LTM
 
-sistema -> ltm: getMatricula()
-ltm --> sistema: ltm_matricula
+    sistema -> ltm: getMedico()
+    ltm --> sistema: med
 
+    sistema -> medico: getMatricula()
+    medico --> sistema: med_matricula
 
-    ' alt if matricula == ltm_matricula
-    '    ltm --> sistema : m 
-    
-    ' else
-    '     ltm --> sistema : void
-    ' end
+    opt if matricula == med_matricula
+       'version de lautaro que lo censuraron
+        ' break
+        '     sistema -->[ : med 
+        ' end
 
-    opt if matricula == ltm_matricula
-        ltm --> sistema : m
+        ' version de mujeres opresoras
+        sistema -->[ : med
     end
-
 end
 
-]<-- sistema : m
 
 @enduml
 ```
