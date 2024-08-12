@@ -354,28 +354,48 @@ enemigo <|-- monstruo
 enemigo <|-- tanque
 
 
+@enduml
+```
 
 
 
 
 
+Dados los ejercicios 1 y 2 de la Guía de TP N°5, modele las siguientes interacciones:
+- Búsqueda de médico por número de matrícula.
+- Búsqueda de pacientes por apellido.
+- Registrar un nuevo análisis.
+
+
+### BUSQUEDA DE MEDICO POR NUMERO DE MATRICULA
+
+```plantuml
+@startuml
+
+hide footbox
+
+skinparam participant {
+  RoundCorner 0
+}
+
+
+participant ":CliLab" as sistema
+participant "LTM[m]:Medico" as ltm
 
 
 
 
+' Parte del diagrama
+
+sistema <--[ : buscarMedico(matricula)
+
+sistema -> ltm : buscarMatricula(matricula)
+
+loop for each m in LTM
 
 
 
-
-
-
-
-
-
-
-
-
-
+end
 
 
 @enduml

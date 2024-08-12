@@ -41,14 +41,16 @@
             "id": "d5043ddbaddeb31c",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf"
+                "file": "Modelos parciales/modelo 2.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -98,8 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d8dd353bbe9007eb",
@@ -115,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
+                "file": "Modelos parciales/modelo 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
+                "file": "Modelos parciales/modelo 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf"
+                "file": "Modelos parciales/modelo 2.md"
               }
             }
           }
@@ -176,14 +177,14 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "e6c2a1d6401e72d4",
+  "active": "d5043ddbaddeb31c",
   "lastOpenFiles": [
+    "1-Repaso recuperatorio/Repaso Recuperatorio.md",
+    "PlantUML_Language_Reference_Guide_es.pdf",
     "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf",
     "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
     "1-Repaso recuperatorio/05 - Guia TP - Realización de CU 2021.pdf",
-    "1-Repaso recuperatorio/Repaso Recuperatorio.md",
     "1-Repaso recuperatorio/Repaso Recuperatorio.md~",
-    "PlantUML_Language_Reference_Guide_es.pdf",
     "Repaso Recuperatorio.md",
     "Modelos parciales/modelo 2.md",
     "1-Repaso recuperatorio/04 - Guia TP - Modelado de Casos de Uso.pdf",
