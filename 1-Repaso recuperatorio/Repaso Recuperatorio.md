@@ -247,6 +247,10 @@ aunque pueden tener animaciones.
 
 class sistema as "Juego" {
 
+
+
+ + iniciar()
+ + setMemory()
 }
 
 
@@ -267,13 +271,26 @@ class jugador as "Jugador" {
 
 class enemigo as "Enemigo" {
 
+- vida: int
+- velocidad: float
+- fuerza: float
 
 
++ atacar()
++ chocar()
+
+'nota que son todos los metodos de movimiento'
++ mvRLUD()
 
 }
 
 class nivel as "Nivel" {
+    - n_level: 1..10
+    
 
+
+    + spawnEnemigos()
+    + spawnElementos()
 
 }
 
@@ -281,19 +298,42 @@ class nivel as "Nivel" {
 
 
 class elemento as "Elemento" {
+   - es_estatico: boolean
+   - duracion: integer
 
+    + setDuracion()
+   + animacion()
 }
 
 
 class monstruo as "Monster" {
+    + setVida()
+    + atacar()
+    + chocar()
+    + mvRLUD()
+
+
+
 
 }
 
 class nave as "Nave" {
+    + setVida()
+    + atacar()
+    + chocar()
+    + mvRLUD()
+
+
 
 }
 
 class tanque as "Tanque" {
+    + setVida()
+    + atacar()
+    + chocar()
+    + mvRLUD()
+
+
 
 }
 
