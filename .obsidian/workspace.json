@@ -1,50 +1,14 @@
 {
   "main": {
-    "id": "e917f6cd96783f0e",
+    "id": "2ded3c849b84ec3c",
     "type": "split",
     "children": [
       {
-        "id": "39b1422866212900",
+        "id": "c8b3d62206287bc6",
         "type": "tabs",
         "children": [
           {
-            "id": "cccb88d8e2d0e164",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-<<<<<<< HEAD
-                "file": "Modelos parciales/modelo 2.md",
-                "mode": "preview",
-                "source": false
-=======
-                "file": "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf"
->>>>>>> aca9cccb2f29bbd860f44c7a3534461c4dc0a8fd
-              }
-            }
-          },
-          {
-            "id": "e6c2a1d6401e72d4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf"
-              }
-            }
-          },
-          {
-            "id": "7763ee2d89b22b2b",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PlantUML_Language_Reference_Guide_es.pdf"
-              }
-            }
-          },
-          {
-            "id": "d5043ddbaddeb31c",
+            "id": "31591e4cdb7b1eee",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,23 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "06e93ea74b2a8313",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf"
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "779ce610c52e49b3",
+    "id": "f29a3b2086a889c1",
     "type": "split",
     "children": [
       {
-        "id": "9767913ef58aeb2d",
+        "id": "316e4f1a9f66e35c",
         "type": "tabs",
         "children": [
           {
-            "id": "5d7818dddc84efdd",
+            "id": "edc5d730c776aae2",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -80,7 +54,7 @@
             }
           },
           {
-            "id": "a66f070c8008eb1d",
+            "id": "63e04351974a2a87",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -95,7 +69,7 @@
             }
           },
           {
-            "id": "d0be380775244b74",
+            "id": "33b7f9251c8072fe",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -110,20 +84,20 @@
     "collapsed": true
   },
   "right": {
-    "id": "d8dd353bbe9007eb",
+    "id": "4f3055046caaae36",
     "type": "split",
     "children": [
       {
-        "id": "1ee7287118b59c57",
+        "id": "6ff2600fc5239cd1",
         "type": "tabs",
         "children": [
           {
-            "id": "84581cfa7d849b96",
+            "id": "be84ae7ab4b90851",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md",
+                "file": "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,19 +109,19 @@
             }
           },
           {
-            "id": "0dd3c161af8866d8",
+            "id": "bce0c0031702524b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md",
+                "file": "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "3c9568b7dcea092c",
+            "id": "91bc8bd03cfd8a53",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -158,12 +132,12 @@
             }
           },
           {
-            "id": "6a0c7bf4b9e1faca",
+            "id": "8874ffed86b46f60",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md"
+                "file": "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf"
               }
             }
           }
@@ -184,45 +158,9 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "d5043ddbaddeb31c",
+  "active": "06e93ea74b2a8313",
   "lastOpenFiles": [
-    "1-Repaso recuperatorio/05 - Guia TP - Realización de CU 2021.pdf",
-    "1-Repaso recuperatorio/Repaso Recuperatorio.md",
-    "Modelos parciales/modelo 2.md",
-    "PlantUML_Language_Reference_Guide_es.pdf",
     "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
-    "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf",
-    "1-Repaso recuperatorio/Repaso Recuperatorio.md~",
-    "Repaso Recuperatorio.md",
-    "1-Repaso recuperatorio/04 - Guia TP - Modelado de Casos de Uso.pdf",
-    "1-Repaso recuperatorio",
-    "05 - Guia TP - Realización de CU 2021.pdf",
-    "03 - Guia TP - Intro Interacciones.pdf",
-    "01 - Guia TP - Intro OO.pdf",
-    "Modelos parciales/parciales.md",
-    "Modelos parciales/parciales modelo 1.md",
-    "Modelo Final/Resolucion de Z0SO.md",
-    "README.md",
-    "examples/example.md",
-    "Guia_5/Ejercicio 3.md",
-    "docs/Diagrama-CU/Casos de Uso.md",
-    "Guia_4/Ejercicio 4.md",
-    "examples/Pasted image 20240530024838.png",
-    "examples/Pasted image 20240530013120.png",
-    "plantuml/ejemplo.md",
-    "docs/Diagrama-Clases/Diagrama de Clases.md",
-    "docs/Diagrama-Clases/Sin título.md",
-    "Sin título.canvas",
-    "Pasted image 20240530013120.png",
-    "examples/Sin título.md",
-    "Pasted image 20240530002219.png",
-    "uml.md",
-    "node_modules/markdown-it-plantuml/README.md",
-    "node_modules/markdown-it/README.md",
-    "node_modules/entities/readme.md",
-    "node_modules/mdurl/README.md",
-    "node_modules/linkify-it/README.md",
-    "node_modules/uc.micro/README.md",
-    "node_modules/punycode.js/README.md"
+    "1-Repaso recuperatorio/Repaso Recuperatorio.md"
   ]
 }
