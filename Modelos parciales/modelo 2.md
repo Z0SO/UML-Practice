@@ -169,10 +169,11 @@ loop for each j in LTJ
     sistema -> jugadorLTJ : getMail()
     jugadorLTJ --> sistema : j_mail
 
-    break mail == j_mail
+    break    mail == j_mail
         jugadorLTJ --> sistema : j
     end
 end
+
 
 sistema --> controlador : buscarJugador(mail):jug
 
@@ -224,6 +225,7 @@ destroy ui
 
 controlador <--[ : destroy()
 destroy controlador
+
 
 
 @enduml
