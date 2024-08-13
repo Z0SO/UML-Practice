@@ -527,7 +527,7 @@ sistema -->[ : LTA
 
 
 ### REGISTRAR UN NUEVO ANALISIS
-
+> esto representa el camino feliz, no se tiene en cuenta errores
 ```plantuml
 @startuml
 
@@ -611,11 +611,23 @@ end
 
 
 
+'me caga la vida la karim
 
+sistema -> analisis : addDiagnostico(diagnostico)
 
+sistema -> lta : add(a)
 
+sistema -> controlador : mostrarExito()
 
+controlador -> ui : mostrarExito()
 
+ui -> usuario : Diagnostico Registrado
 
+controlador -> ui : destroy()
+destroy ui
+
+controlador <-[ : destroy()
+destroy controlador
 
 ```
+
