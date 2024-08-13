@@ -17,7 +17,7 @@ skinparam linetype ortho
 persona <|-- medico
 persona <|-- paciente
 
-persona --- analisis: > realiza
+paciente -- analisis: > realiza
 
 medico --- analisis: > solicita
 
@@ -396,7 +396,7 @@ sistema <-[ : buscarMedico(matricula)
 
 loop for each m in LTM
 
-    sistema -> ltm: getMedico()
+    sistema -> ltm: getMedico()[p]
     ltm --> sistema: med
 
     sistema -> medico: getMatricula()
@@ -523,4 +523,52 @@ end
 sistema -->[ : LTA
 
 @enduml
+```
+
+
+### REGISTRAR UN NUEVO ANALISIS
+
+```plantuml
+@startuml
+
+hide footbox
+
+skinparam participant {
+  RoundCorner 0
+}
+
+
+
+actor "Usuario" as usuario
+
+participant ":UI-Clilab" as ui
+
+
+create ":CTRL-Clilab" as controlador 
+controlador <--[ : create()
+
+
+
+participant ":CliLab" as sistema
+
+
+participant "LTM[med]:Medico" as ltm
+
+participant "LTP[p]:Paciente" as ltp
+
+participant "LTA:Analisis" as lta
+
+
+controlador --> ui : create()
+
+controlador -> ui : mostrarOpciones(opciones)
+ui -> usuario : opciones
+
+usuario -> ui : registrarAnalisis
+
+ui --> controlador : mostrarOpciones(opciones):registrarAnalisis
+
+
+
+
 ```
