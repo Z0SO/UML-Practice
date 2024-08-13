@@ -665,7 +665,7 @@ Es importante destacar que la expensa se emite a nombre del propietario y puede 
 ```plantuml
 @startuml
 
-skinparam linetype ortho
+'skinparam linetype ortho
 
 ' ciel
 ' expensa
@@ -738,42 +738,46 @@ class expensa as "Expensa" {
     + calcularExpensa(): Float
 }
 
-
-class propietario as "Propietario" {
+class persona as "Persona" {
     - nombre : String
     - apellido: String
     - telefono_fijo: Int
     - telefono_celular: Int
+}
+
+class propietario as "Propietario" {
     - fecha_adquisicion: Date
 }
 
 class inquilino as "Inquilino" {
 
-    - nombre : String
-    - apellido: String
-    - telefono_fijo: Int
-    - telefono_celular: Int
     - fecha_inicio_contrato: Date
     - autorizacion: boolean
 
 }
 
 
+persona <|- propietario
+persona <|- inquilino
+
 
 propietario -- inquilino: > alquila
 propietario -- dpto: > posee
 
 
-sistema -- dpto: > posee
-sistema -- cochera: > tiene
-sistema -- expensa: > registra
+sistema *-- dpto
+sistema *-- cochera
+sistema ---- expensa: > registra
 
-sistema -- propietario: > tiene
+sistema ---- propietario: > tiene
 
 dpto -- unidad_funcional: > tiene
-cochera -- unidad_funcional: > tiene
+cochera - unidad_funcional: > tiene
 
-expensa -- unidad_funcional: < calcula
+expensa -- dpto: > gestiona
+expensa -- cochera: > gestiona
+
+persona -- expensa: > paga
 
 @enduml
 ```
