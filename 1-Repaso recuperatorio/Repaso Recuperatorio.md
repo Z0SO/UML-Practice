@@ -661,6 +661,7 @@ Es importante destacar que la expensa se emite a nombre del propietario y puede 
 
 ### Diagrama de Clases
 
+<> Segun Laut
 
 ```plantuml
 @startuml
@@ -781,6 +782,145 @@ persona -- expensa: > paga
 
 @enduml
 ```
+
+> Segun Karim
+
+```plantuml
+@startuml
+
+'skinparam linetype ortho
+
+' ciel
+' expensa
+
+
+' torre
+
+' departamento
+
+' chochera
+' unidad_funcional
+
+' propietario
+
+' inquilino
+
+
+
+
+class sistema as "CIEL" {
+    - nombre: String
+    - direccion: String
+    - telefono: Int
+    - email: email
+}
+
+
+
+class dpto as "Departamento" {
+    - torre: [A,B,C]
+    - piso: Int
+    - numero: Int
+
+    - balcon: boolean
+    - baulera: boolean
+
+
+
+
+}
+
+class cochera as "Cochera" {
+    - num_cochera: Int
+    - area: [delantera, media, trasera] 
+    - cubierta: boolean
+
+
+}
+
+class unidad_funcional as "Unidad_Funcional" {
+
+    - dimension: Float
+    - coeficiente: Float
+
+
+}
+
+class expensa as "Expensa" {
+    
+    - fondo_reserva: Float
+    - expensa_pura: Float
+    - agua: Float
+    - gas: Float
+    - interes: Float
+    - fecha_pago: Date
+    - fecha_vencimiento: Date
+
+    + calcularInteres(): Float
+    + calcularFondoReserva(): Float
+    + calcularExpensa(): Float
+}
+
+class persona as "Persona" {
+    - nombre : String
+    - apellido: String
+    - telefono_fijo: Int
+    - telefono_celular: Int
+}
+
+class propietario as "Propietario" {
+    - fecha_adquisicion: Date
+}
+
+class inquilino as "Inquilino" {
+
+    - fecha_inicio_contrato: Date
+    - autorizacion: boolean
+
+}
+
+
+persona <|- propietario
+persona <|- inquilino
+
+
+propietario -- inquilino: > alquila
+propietario -- dpto: > posee
+
+
+sistema ---- dpto: > posee
+sistema ---- cochera: > posee
+sistema ---- expensa: > registra
+
+sistema ---- propietario: > tiene
+
+dpto -- unidad_funcional: > tiene
+cochera - unidad_funcional: > tiene
+
+expensa -- dpto: > gestiona
+expensa -- cochera: > gestiona
+
+persona -- expensa: > paga
+
+@enduml
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
