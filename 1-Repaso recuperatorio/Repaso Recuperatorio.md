@@ -665,6 +665,8 @@ Es importante destacar que la expensa se emite a nombre del propietario y puede 
 ```plantuml
 @startuml
 
+skinparam linetype ortho
+
 ' ciel
 ' expensa
 
@@ -756,6 +758,22 @@ class inquilino as "Inquilino" {
 
 }
 
+
+
+propietario -- inquilino: > alquila
+propietario -- dpto: > posee
+
+
+sistema -- dpto: > posee
+sistema -- cochera: > tiene
+sistema -- expensa: > registra
+
+sistema -- propietario: > tiene
+
+dpto -- unidad_funcional: > tiene
+cochera -- unidad_funcional: > tiene
+
+expensa -- unidad_funcional: < calcula
 
 @enduml
 ```

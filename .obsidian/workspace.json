@@ -6,6 +6,7 @@
       {
         "id": "c8b3d62206287bc6",
         "type": "tabs",
+        "dimension": 49.12621359223301,
         "children": [
           {
             "id": "31591e4cdb7b1eee",
@@ -36,6 +37,25 @@
               "type": "pdf",
               "state": {
                 "file": "PlantUML_Language_Reference_Guide_es.pdf"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "e2ac37fb6e425b9b",
+        "type": "tabs",
+        "dimension": 50.873786407766985,
+        "children": [
+          {
+            "id": "2f2e4cd08c100f47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -167,11 +187,11 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "31591e4cdb7b1eee",
+  "active": "2f2e4cd08c100f47",
   "lastOpenFiles": [
-    "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
-    "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf",
+    "PlantUML_Language_Reference_Guide_es.pdf",
     "1-Repaso recuperatorio/Repaso Recuperatorio.md",
-    "PlantUML_Language_Reference_Guide_es.pdf"
+    "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf",
+    "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf"
   ]
 }
