@@ -435,9 +435,9 @@ skinparam participant {
 
 
 participant ":CliLab" as sistema
+participant "LTP:Paciente" as ltp
 
-participant "p:LTP:Paciente" as ltp
-
+participant "p:Paciente" as paciente
 
 
 
@@ -448,10 +448,10 @@ sistema <-[ : buscarPaciente(apellido)
 create "LTA:Paciente" as lta
 sistema -->  lta: create()
 
-loop for each LTP
+loop
 
     sistema -> ltp : getPaciente()
-    ltp --> sistema: pac
+    ltp --> sistema: p
 
     sistema -> paciente: getApellido()
 
@@ -464,22 +464,67 @@ loop for each LTP
         ' pero no se como carajo añadirlo
 
 
-        sistema -> lta: add()
-        
+        sistema -> lta: add(p)
+    
     end
 
 
-' ahora tendria que añadir ese paciente a la lista de todos los apellidos de ese paciente
+    ' ahora tendria que añadir ese paciente a la lista de todos los apellidos de ese paciente
+end
+
+sistema -->[ : LTA
+
+@enduml
+```
+
+### Forma alternativa con selector en LTP
+
+```plantuml
+@startuml
+
+
+hide footbox
+
+skinparam participant {
+  RoundCorner 0
+}
+
+
+participant ":CliLab" as sistema
+participant "[p]LTP:Paciente" as ltp
+
+
+
+
+
+sistema <-[ : buscarPaciente(apellido)
+
+
+create "LTA:Paciente" as lta
+sistema -->  lta: create()
+
+loop for each p in LTP
+
+    sistema -> ltp : getApellido()
+    ltp --> sistema: p.apellido
+
+
+
+    opt if apellido == p.apellido
+
+        'tendria que añadir al paciente aca
+        ' pero no se como carajo añadirlo
+
+
+        sistema -> lta: add(p)
+    
+    end
+
 
 
 end
 
-
-
-
-
-
-
+sistema -->[ : LTA
 
 @enduml
 ```
