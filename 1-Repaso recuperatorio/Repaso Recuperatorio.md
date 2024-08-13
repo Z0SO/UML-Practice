@@ -631,3 +631,36 @@ destroy controlador
 
 ```
 
+
+
+---
+
+
+**Ejercicio 7**
+
+La administración de las torres de edificios “CIEL” necesita llevar un registro detallado de los pagos de expensas realizados por los habitantes. El edificio está dividido en tres torres: A, B y C. Cada torre cuenta con una cantidad distinta de departamentos por piso, y cada departamento se identifica por su torre, piso y número.
+
+Los departamentos se diferencian por la presencia o ausencia de balcón y baulera. Además, el edificio dispone de cocheras, que se identifican por un número y pueden estar ubicadas en diferentes áreas del predio: delantera, media o trasera. Las cocheras también pueden ser cubiertas o descubiertas.
+
+Tanto los departamentos como las cocheras tienen un número de Unidad Funcional, que incluye una dimensión y un coeficiente calculado a partir de la dimensión y ubicación de la unidad. Este coeficiente se utiliza para calcular el fondo de reserva, un monto que forma parte de la expensa.
+
+Para calcular la expensa mensual, se consideran las características específicas de cada unidad funcional. Los datos necesarios incluyen: expensa pura, agua, fondo de reserva y gas. Es crucial registrar la fecha de vencimiento, la fecha de pago y los intereses por pago fuera de término. Los intereses se calculan de la siguiente manera:
+- Del 11 al 20 del mes: 0,5%
+- Del 21 al 31 del mes: 1% adicional
+- Fuera del mes: 1,5%
+
+También es necesario contar con la información de los propietarios de las unidades funcionales, incluyendo: nombre y apellido, teléfono fijo y celular, así como la fecha de adquisición del inmueble. Si la unidad funcional se alquila, se deben registrar los datos del inquilino: nombre y apellido, teléfono fijo y celular, fecha de inicio del contrato, y si tiene autorización del dueño para asistir a las reuniones de consorcio.
+
+Es importante destacar que la expensa se emite a nombre del propietario y puede ser pagada tanto por el dueño como por el inquilino, de acuerdo a un acuerdo interno entre ambas partes.
+
+
+
+
+---
+
+
+
+
+
+
+
