@@ -667,7 +667,8 @@ Es importante destacar que la expensa se emite a nombre del propietario y puede 
 
 ' ciel
 ' expensa
-' edificio
+
+
 ' torre
 
 ' departamento
@@ -689,10 +690,71 @@ class sistema as "CIEL" {
     - email: email
 }
 
+
+
 class dpto as "Departamento" {
-    
+    - torre: [A,B,C]
+    - piso: Int
+    - numero: Int
+
+    - balcon: boolean
+    - baulera: boolean
+
+
+
+
 }
 
+class cochera as "Cochera" {
+    - num_cochera: Int
+    - area: [delantera, media, trasera] 
+    - cubierta: boolean
+
+
+}
+
+class unidad_funcional as "Unidad_Funcional" {
+
+    - dimension: Float
+    - coeficiente: Float
+
+
+}
+
+class expensa as "Expensa" {
+    
+    - fondo_reserva: Float
+    - expensa_pura: Float
+    - agua: Float
+    - gas: Float
+    - interes: Float
+    - fecha_pago: Date
+    - fecha_vencimiento: Date
+
+    + calcularInteres(): Float
+    + calcularFondoReserva(): Float
+    + calcularExpensa(): Float
+}
+
+
+class propietario as "Propietario" {
+    - nombre : String
+    - apellido: String
+    - telefono_fijo: Int
+    - telefono_celular: Int
+    - fecha_adquisicion: Date
+}
+
+class inquilino as "Inquilino" {
+
+    - nombre : String
+    - apellido: String
+    - telefono_fijo: Int
+    - telefono_celular: Int
+    - fecha_inicio_contrato: Date
+    - autorizacion: boolean
+
+}
 
 
 @enduml
