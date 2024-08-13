@@ -568,6 +568,53 @@ usuario -> ui : registrarAnalisis
 
 ui --> controlador : mostrarOpciones(opciones):registrarAnalisis
 
+controlador -> ui : ingDatAn()
+
+ui -> usuario : mostrarFormulario
+
+usuario -> ui : matricula, dni, diagnostico
+
+
+ui --> controlador : ingDatAn(): matricula, dni, diagnostico
+
+
+controlador -> sistema : crearNuevAn(matricula, dni, diagnostico)
+
+
+' se hace la buscqueda del medico y del paciente
+
+create "a:Analisis" as analisis
+sistema --> analisis : create()
+
+loop for each med in LTM
+
+    sistema -> ltm : getMatricula()
+    ltm --> sistema : med.matricula
+
+    opt if matricula == med.matricula
+
+        sistema -> analisis : addMedico(med)
+    
+    end
+
+end
+
+loop for each p in LTP
+    sistema -> ltp : getDni()
+    ltp --> sistema : p.dni
+
+    opt if dni == p.dni
+        sistema -> analisis : addPaciente(p)   
+    end
+
+end
+
+
+
+
+
+
+
 
 
 
