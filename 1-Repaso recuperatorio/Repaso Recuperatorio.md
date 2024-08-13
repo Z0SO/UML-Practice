@@ -491,10 +491,7 @@ skinparam participant {
 
 
 participant ":CliLab" as sistema
-participant "[p]LTP:Paciente" as ltp
-
-
-
+participant "LTP[p]:Paciente" as ltp
 
 
 sistema <-[ : buscarPaciente(apellido)
@@ -508,19 +505,18 @@ loop for each p in LTP
     sistema -> ltp : getApellido()
     ltp --> sistema: p.apellido
 
-
-
     opt if apellido == p.apellido
 
         'tendria que añadir al paciente aca
         ' pero no se como carajo añadirlo
-
+        
+        
 
         sistema -> lta: add(p)
-    
+
+
+        '
     end
-
-
 
 end
 
