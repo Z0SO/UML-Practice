@@ -659,6 +659,59 @@ Es importante destacar que la expensa se emite a nombre del propietario y puede 
 ---
 
 
+### Diagrama de Clases
+
+
+```plantuml
+@startuml
+
+' ciel
+' expensa
+' edificio
+' torre
+
+' departamento
+
+' chochera
+' unidad_funcional
+
+' propietario
+
+' inquilino
+
+
+
+
+class sistema as "CIEL" {
+    - nombre: String
+    - direccion: String
+    - telefono: Int
+    - email: email
+}
+
+class dpto as "Departamento" {
+    
+}
+
+
+
+@enduml
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
