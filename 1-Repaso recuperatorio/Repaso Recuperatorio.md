@@ -394,7 +394,7 @@ participant "med:Medico" as medico
 
 sistema <-[ : buscarMedico(matricula)
 
-loop for each m in LTM
+loop
 
     sistema -> ltm: getMedico()[p]
     ltm --> sistema: med
