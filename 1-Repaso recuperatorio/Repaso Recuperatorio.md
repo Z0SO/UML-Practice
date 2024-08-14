@@ -661,7 +661,7 @@ Es importante destacar que la expensa se emite a nombre del propietario y puede 
 
 ### Diagrama de Clases
 
-<> Segun Laut
+> Segun Laut
 
 ```plantuml
 @startuml
