@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Parcial_2/01-Vista_maquina_de_estados/ej-2.md",
+                "file": "PlantUML_Language_Reference_Guide_es.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de ej-2"
+              "title": "Enlaces entrantes de PlantUML_Language_Reference_Guide_es"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Parcial_2/01-Vista_maquina_de_estados/ej-2.md",
+                "file": "PlantUML_Language_Reference_Guide_es.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de ej-2"
+              "title": "Enlaces salientes de PlantUML_Language_Reference_Guide_es"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Parcial_2/01-Vista_maquina_de_estados/ej-2.md"
+                "file": "PlantUML_Language_Reference_Guide_es.pdf"
               },
               "icon": "lucide-list",
-              "title": "Esquema de ej-2"
+              "title": "Esquema de PlantUML_Language_Reference_Guide_es"
             }
           }
         ]
@@ -199,16 +199,16 @@
       }
     ]
   },
-  "active": "1658e358bf0aaa23",
+  "active": "ddd0ce32e2c28915",
   "lastOpenFiles": [
-    "Parcial_2/01-Vista_maquina_de_estados/ej-1.md",
     "Parcial_2/01-Vista_maquina_de_estados/ej-2.md",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-2.md~",
+    "PlantUML_Language_Reference_Guide_es.pdf",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-1.md",
     "Parcial_2/01-Vista_maquina_de_estados/Recursos.md",
     "Parcial_1/examples/example.md",
     "Parcial_1/Guia_5/Ejercicio 3.md",
     "Parcial_1/Guia_5/05 - Guia TP - Realización de CU 2021.pdf",
-    "Parcial_2/01-Vista_maquina_de_estados/ej-2.md~",
-    "PlantUML_Language_Reference_Guide_es.pdf",
     "Parcial_2/01-Vista_maquina_de_estados/ej-1.md~",
     "Parcial_2/01-Vista_maquina_de_estados/ej-6.md",
     "Parcial_2/01-Vista_maquina_de_estados/ej-5.md~",

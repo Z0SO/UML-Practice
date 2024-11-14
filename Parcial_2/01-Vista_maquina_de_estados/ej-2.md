@@ -20,12 +20,17 @@ El objetivo es desarrollar un modelo de estados que represente este funcionamien
 
 hide empty description
 
+state "Colgado" as colgado
+state "Descolgado" as descolgado
+state "Tono de Marcado" as tonoDeMarcado
+state "Marcando" as marcando
+state "Tiempo Agotado" as tiempoAgotado
+state "Conectando" as conectando
+state "Ocupado" as ocupado
+state "Llamando" as llamando
+state "Hablando" as hablando
 
-[*] --> Colgado
 
-Colgado --> TonoDeMarcar : Descolgar
-
-TonoDeMarcar --> Marcando : Marcando Numeros
 
 
 
