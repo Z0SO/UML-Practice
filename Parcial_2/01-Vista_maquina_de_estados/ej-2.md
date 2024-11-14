@@ -20,12 +20,9 @@ El objetivo es desarrollar un modelo de estados que represente este funcionamien
 
 hide empty description
 
-' estilo de flechas ortogonal
-skinparam linetype ortho
+'definir el sentirdo de derecha a izquierda
 
-' tamaño grande del diagrama
-scale 800 width
-
+top to bottom direction
 
 state "Colgado" as colgado
 state "Descolgado" as descolgado
@@ -44,18 +41,23 @@ colgado -> descolgado: Descolgar
 
 descolgado --> tonoDeMarcado: Iniciar Marcado
 
-tonoDeMarcado -> marcando: Marcando numero
+tonoDeMarcado ---> marcando: Marcando numero
 
-marcando -> tiempoAgotado: [tiempo > 15s]/Tiempo Agotado
-marcando -> conectando: [tiempo <= 15s]
+marcando --> tiempoAgotado: [tiempo > 15s]/Tiempo Agotado
+tiempoAgotado -> [*]
 
-conectando -> ocupado: [linea ocupada]/Linea ocupada
+marcando --> conectando: [tiempo <= 15s]
 
-conectando -> llamando: [linea libre]/Sonando
+conectando ----> ocupado: [linea ocupada]/Linea ocupada
 
-llamando -> hablando: [receptor atiende]/Comunicacion establecida
+conectando ---> llamando: [linea libre]/Sonando
 
-hablando -> colgado: Colgar
+llamando ----> hablando: [receptor atiende]/Comunicacion establecida
+llamando --> [*]: [receptor no atiende]/Comunicacion rechazada
+
+hablando --> colgado: Comunicacion finalizada
+
+colgado --> [*]
 
 
 
