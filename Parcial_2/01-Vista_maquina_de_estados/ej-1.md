@@ -1,62 +1,23 @@
+## Ejercicio 1 - Admisión de Estudiantes Internacionales
 
-### Escenario de Admisión de Estudiantes Internacionales en una Universidad
+Para gestionar la admisión de estudiantes internacionales, la universidad ha implementado un sistema web que guía el proceso a través de las siguientes etapas:
 
-**Contexto**: Un sistema web facilita el proceso de admisión de estudiantes internacionales en una universidad. A través de este sistema, los estudiantes completan una solicitud en línea y presentan la documentación necesaria para postularse. El proceso de admisión pasa por varias etapas y áreas dentro de la universidad, asegurando que cada solicitud se revise exhaustivamente.
+1. **Solicitud en Línea:** Los estudiantes interesados deben completar un formulario en línea que incluye sus datos personales, información de contacto, elección de programa académico y antecedentes de formación. También deben adjuntar:
+   - Certificación de su expediente académico.
+   - Comprobante de los resultados de su examen oficial de inglés.
+   - Currículum Vitae.
 
-#### Proceso de Admisión
+2. **Revisión del Servicio de Estudiantes:** La solicitud pasa primero por el servicio de estudiantes. Un responsable verifica que toda la documentación esté correcta y completa. Si falta algún documento o contiene errores, se notifica al estudiante para que lo envíe de nuevo. Una vez que la solicitud está completa y correcta, se marca como “visada” y se envía al área académica.
 
-1. **Solicitud Inicial**
-   - Los estudiantes completan un formulario en línea que incluye:
-     - Datos personales
-     - Dirección de contacto
-     - Programa de estudios al que desean postularse
-     - Información sobre su formación académica previa
-   - Además, deben adjuntar:
-     - Certificación de su expediente académico
-     - Comprobante de los resultados de un test oficial de conocimiento del idioma inglés
-     - Currículum Vitae (CV)
+3. **Revisión Académica:** En el área académica, un responsable revisa la documentación y confirma que las asignaturas cursadas por el estudiante son equivalentes a las de la universidad. Tras este análisis, la solicitud puede ser:
+   - **Certificada:** La solicitud avanza en el proceso.
+   - **No certificada:** El servicio de estudiantes notifica al estudiante sobre la situación.  
+   
+   Si la solicitud es certificada, el servicio de estudiantes verifica los resultados del test de inglés ingresando un código de verificación que figura en el comprobante del examen. Si los resultados no cumplen con los requisitos mínimos, la solicitud es rechazada de manera automática.
 
-2. **Revisión por el Servicio de Estudiantes**
-   - El área de Servicio de Estudiantes recibe y revisa cada solicitud.
-   - Un responsable verifica que todos los documentos requeridos estén completos y correctos.
-   - **Si falta algún documento o es incorrecto**:
-     - Se notifica al estudiante, quien deberá enviar nuevamente los documentos que falten o corregir los incorrectos.
-   - **Si la solicitud está completa**:
-     - Se marca como "visada" y pasa al siguiente nivel de revisión en el área académica.
+4. **Evaluación del Comité de Admisión:** Si la solicitud cumple todos los requisitos, queda disponible para que el comité de admisión, compuesto por tres miembros de la universidad, la evalúe. El área académica designa a los miembros del comité y asigna a uno de ellos como presidente. Este presidente ingresa al sistema y registra la decisión del comité, que se basa en una evaluación de varios ítems. Estos ítems reciben una puntuación de 0 a 3, aplicable también a la documentación, al currículum vitae y al test de inglés.
 
-3. **Evaluación del Área Académica**
-   - El responsable del área académica revisa la solicitud visada.
-   - Verifica que las asignaturas cursadas previamente por el estudiante sean equivalentes o correspondan a las de la universidad.
-   - **Posibles resultados de esta evaluación**:
-     - **Certificación**: La solicitud es marcada como "certificada" y se informa al Servicio de Estudiantes.
-     - **No certificada**: Si no cumple con los requisitos, se notifica al estudiante y la solicitud no avanza.
-
-4. **Verificación del Test de Inglés**
-   - Si la solicitud es certificada, el Servicio de Estudiantes realiza una comprobación del test de inglés:
-     - Ingresan un código de verificación (que aparece en el informe de resultados del test) en el sistema de información.
-   - **Si los resultados del test no cumplen con los requisitos**:
-     - La solicitud es rechazada automáticamente.
-   - **Si los resultados son satisfactorios**:
-     - La solicitud pasa a ser evaluada por el comité de admisión de la universidad.
-
-5. **Evaluación por el Comité de Admisión**
-   - La solicitud es revisada por un comité compuesto por tres miembros de la universidad.
-   - **Designación del Comité**:
-     - El responsable del área académica designa a los tres miembros del comité, asignando a uno de ellos como presidente.
-     - El presidente es quien ingresa al sistema para cargar la decisión final del comité.
-   - **Proceso de Evaluación**:
-     - El comité se reúne y evalúa la solicitud basándose en una serie de ítems o características que el estudiante debe cumplir.
-     - Cada ítem es calificado en una escala de 0 a 3.
-     - También se califican la documentación, el CV y los resultados del test de inglés utilizando la misma escala.
-   - **Decisión Final**:
-     - Según el puntaje total obtenido, la solicitud puede ser:
-       - **Aceptada**
-       - **Rechazada**
-     - **En caso de rechazo**: El comité puede ingresar observaciones y/o comentarios explicativos.
-
-6. **Notificación al Estudiante**
-   - El Servicio de Estudiantes tiene acceso a la decisión final de la solicitud.
-   - Notifican al estudiante sobre el resultado de su admisión, incluyendo observaciones si la solicitud fue rechazada.
+5. **Decisión Final:** La evaluación del comité determina si la solicitud es “aceptada” o “rechazada”. En ambos casos, el servicio de estudiantes puede ver el resultado y notificar al estudiante. Si la solicitud es rechazada, se incluye la opción de añadir observaciones y/o comentarios del comité para informar al estudiante.
 
 ---
 

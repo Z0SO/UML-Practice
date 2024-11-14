@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Parcial_2/01-Vista_maquina_de_estados/ej-1.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -162,24 +162,63 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
+  "floating": {
+    "id": "0c783cc8287590b4",
+    "type": "floating",
+    "children": [
+      {
+        "id": "0f93ee494923c8cf",
+        "type": "window",
+        "children": [
+          {
+            "id": "c39bd2de70c50954",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "ddd0ce32e2c28915",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "PlantUML_Language_Reference_Guide_es.pdf"
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "PlantUML_Language_Reference_Guide_es"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 10,
+        "y": 34,
+        "width": 1900,
+        "height": 1036,
+        "maximize": false,
+        "zoom": -0.5
+      }
+    ]
+  },
   "active": "1658e358bf0aaa23",
   "lastOpenFiles": [
+    "Parcial_2/01-Vista_maquina_de_estados/ej-2.md~",
+    "PlantUML_Language_Reference_Guide_es.pdf",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-1.md",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-1.md~",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-6.md",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-5.md~",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-5.md",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-4.md~",
     "Parcial_2/01-Vista_maquina_de_estados/ej-4.md",
     "Parcial_2/01-Vista_maquina_de_estados/ej-3.md~",
     "Parcial_2/01-Vista_maquina_de_estados/ej-3.md",
-    "Parcial_2/01-Vista_maquina_de_estados/ej-2.md~",
     "Parcial_2/01-Vista_maquina_de_estados/ej-2.md",
     "Parcial_2/01-Vista_maquina_de_estados/Recursos.md~",
     "Parcial_2/01-Vista_maquina_de_estados/Recursos.md",
-    "Parcial_2/01-Vista_maquina_de_estados/ej-1.md",
     "Parcial_2/02-Patrones_de_diseño/07 - Guía TP - Patrones de Diseño.pdf",
     "Parcial_2/02-Patrones_de_diseño/Resumen Patrones de Diseño.pdf",
     "Parcial_2/Lista de Temas.md",
     "Parcial_2/03-Diseño_de_pantallas",
-    "Parcial_2/02-Patrones_de_diseño",
-    "Parcial_2/01-Vista_maquina_de_estados",
-    "Lista de Temas.md~",
-    "4913",
     "Parcial_1/examples/Pasted image 20240530013120.png",
     "Parcial_1/1-Repaso recuperatorio/Repaso Recuperatorio.md"
   ]
