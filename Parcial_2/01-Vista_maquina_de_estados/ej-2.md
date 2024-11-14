@@ -20,6 +20,13 @@ El objetivo es desarrollar un modelo de estados que represente este funcionamien
 
 hide empty description
 
+' estilo de flechas ortogonal
+skinparam linetype ortho
+
+' tamaño grande del diagrama
+scale 800 width
+
+
 state "Colgado" as colgado
 state "Descolgado" as descolgado
 state "Tono de Marcado" as tonoDeMarcado
@@ -34,6 +41,23 @@ state "Hablando" as hablando
 [*] -> colgado
 
 colgado -> descolgado: Descolgar
+
+descolgado --> tonoDeMarcado: Iniciar Marcado
+
+tonoDeMarcado -> marcando: Marcando numero
+
+marcando -> tiempoAgotado: [tiempo > 15s]/Tiempo Agotado
+marcando -> conectando: [tiempo <= 15s]
+
+conectando -> ocupado: [linea ocupada]/Linea ocupada
+
+conectando -> llamando: [linea libre]/Sonando
+
+llamando -> hablando: [receptor atiende]/Comunicacion establecida
+
+hablando -> colgado: Colgar
+
+
 
 
 @enduml
