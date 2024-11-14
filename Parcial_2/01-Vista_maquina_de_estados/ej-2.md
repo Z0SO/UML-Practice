@@ -31,7 +31,9 @@ state "Llamando" as llamando
 state "Hablando" as hablando
 
 
+[*] -> colgado
 
+colgado -> descolgado: Descolgar
 
 
 @enduml
