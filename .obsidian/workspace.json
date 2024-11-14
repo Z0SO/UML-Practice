@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Parcial_2/01-Vista_maquina_de_estados/Recursos.md",
+                "file": "Parcial_2/01-Vista_maquina_de_estados/ej-1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Recursos"
+              "title": "ej-1"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Parcial_2/01-Vista_maquina_de_estados/Recursos.md",
+                "file": "Parcial_2/01-Vista_maquina_de_estados/ej-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Recursos"
+              "title": "Enlaces entrantes de ej-1"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Parcial_2/01-Vista_maquina_de_estados/Recursos.md",
+                "file": "Parcial_2/01-Vista_maquina_de_estados/ej-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Recursos"
+              "title": "Enlaces salientes de ej-1"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Parcial_2/01-Vista_maquina_de_estados/Recursos.md"
+                "file": "Parcial_2/01-Vista_maquina_de_estados/ej-1.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de Recursos"
+              "title": "Esquema de ej-1"
             }
           }
         ]
@@ -165,6 +165,7 @@
   "active": "1658e358bf0aaa23",
   "lastOpenFiles": [
     "Parcial_2/01-Vista_maquina_de_estados/Recursos.md",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-1.md",
     "Parcial_2/02-Patrones_de_diseño/07 - Guía TP - Patrones de Diseño.pdf",
     "Parcial_2/02-Patrones_de_diseño/Resumen Patrones de Diseño.pdf",
     "Parcial_2/Lista de Temas.md",
