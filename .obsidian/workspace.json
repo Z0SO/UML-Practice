@@ -4,49 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "c8b3d62206287bc6",
+        "id": "1fbbea56df93762d",
         "type": "tabs",
         "children": [
           {
-            "id": "31591e4cdb7b1eee",
+            "id": "1658e358bf0aaa23",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "1-Repaso recuperatorio/05 - Guia TP - Realización de CU 2021.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "05 - Guia TP - Realización de CU 2021"
-            }
-          },
-          {
-            "id": "06e93ea74b2a8313",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "03 - Guia TP - Intro Interacciones"
-            }
-          },
-          {
-            "id": "234b97a3daa14d15",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Repaso Recuperatorio"
+              "title": "Nueva pestaña"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,8 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4f3055046caaae36",
@@ -119,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md",
+                "file": "Parcial_2/Lista de Temas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Repaso Recuperatorio"
+              "title": "Enlaces entrantes de Lista de Temas"
             }
           },
           {
@@ -138,12 +108,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md",
+                "file": "Parcial_2/Lista de Temas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Repaso Recuperatorio"
+              "title": "Enlaces salientes de Lista de Temas"
             }
           },
           {
@@ -165,10 +135,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1-Repaso recuperatorio/Repaso Recuperatorio.md"
+                "file": "Parcial_2/Lista de Temas.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de Repaso Recuperatorio"
+              "title": "Esquema de Lista de Temas"
             }
           }
         ]
@@ -188,13 +158,21 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "234b97a3daa14d15",
+  "active": "edc5d730c776aae2",
   "lastOpenFiles": [
+    "Parcial_2/03-Diseño_de_entradas_y_salidas",
+    "Parcial_2/02-Patrones_de_diseño",
+    "Parcial_2/01-Vista_maquina_de_estados",
+    "Lista de Temas.md~",
+    "4913",
+    "Parcial_1/examples/Pasted image 20240530013120.png",
+    "Parcial_2/Lista de Temas.md",
+    "Parcial_2",
+    "Parcial_1",
+    "Parcial_1/1-Repaso recuperatorio/05 - Guia TP - Realización de CU 2021.pdf",
+    "Parcial_1/1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf",
+    "Parcial_1/1-Repaso recuperatorio/Repaso Recuperatorio.md",
     "PlantUML_Language_Reference_Guide_es.pdf",
-    "1-Repaso recuperatorio/05 - Guia TP - Realización de CU 2021.pdf",
-    "1-Repaso recuperatorio/03 - Guia TP - Intro Interacciones.pdf",
-    "1-Repaso recuperatorio/04 - Guia TP - Modelado de Casos de Uso.pdf",
-    "1-Repaso recuperatorio/Repaso Recuperatorio.md",
-    "1-Repaso recuperatorio/01 - Guia TP - Intro OO.pdf"
+    "Parcial_1/1-Repaso recuperatorio/04 - Guia TP - Modelado de Casos de Uso.pdf"
   ]
 }
