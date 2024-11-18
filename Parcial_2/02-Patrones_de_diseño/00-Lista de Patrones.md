@@ -1,8 +1,8 @@
 - Lista de algunos patrones que entran en el pacial **Segun el Tipo**
 
 #### Creacional
-- [ ] Singleton
-- [ ] Factory Method
+- [x] Singleton
+- [x] Factory Method
 
 #### Estructurales
 - [ ] Facade
