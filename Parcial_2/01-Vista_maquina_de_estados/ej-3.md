@@ -43,29 +43,23 @@ detenido -> [*]
 
 
 ### Ascensor con memoria
-
+- El ascensor puede almacenar hasta cinco solicitudes. En esta versión, el ascensor prioriza las detenciones no según el orden en que las solicitudes fueron recibidas, sino de acuerdo con su proximidad al piso actual.
 ```plantuml
 @startuml
 hide empty description
 
-state "Detenido" as detenido {
-    state "Sin solicitudes" as sinSolicitudes
-    state "Con solicitudes" as conSolicitudes
-    sinSolicitudes --> conSolicitudes: Recibir solicitud
-    conSolicitudes --> sinSolicitudes: Todas las solicitudes atendidas
-}
-
+state "Detenido" as detenido 
 state "Subiendo" as subiendo
 state "Bajando" as bajando
 
-[*] --> detenido
 
-detenido --> subiendo: [Solicitud > Piso actual]
-detenido --> bajando: [Solicitud < Piso actual]
 
-subiendo --> detenido: Alcanzar piso más cercano arriba
-bajando --> detenido: Alcanzar piso más cercano abajo
+[*] -> detenido: Encender
 
-detenido --> [*]
+detenido --> subiendo: [ si solicitud > piso actual ]/Solicitud para ir a un piso superior
+
+subiendo -> detenido: []
+
+detenido --> [*]: Apagar
 @enduml
 ```
