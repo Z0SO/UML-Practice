@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/template_patrones.md",
+                "file": "Parcial_2/02-Patrones_de_diseño/01-Creacional/01-Singleton.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "template_patrones"
+              "title": "01-Singleton"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "templates/template_patrones.md",
+                "file": "Parcial_2/02-Patrones_de_diseño/01-Creacional/01-Singleton.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de template_patrones"
+              "title": "Enlaces entrantes de 01-Singleton"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "templates/template_patrones.md",
+                "file": "Parcial_2/02-Patrones_de_diseño/01-Creacional/01-Singleton.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de template_patrones"
+              "title": "Enlaces salientes de 01-Singleton"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "templates/template_patrones.md"
+                "file": "Parcial_2/02-Patrones_de_diseño/01-Creacional/01-Singleton.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de template_patrones"
+              "title": "Esquema de 01-Singleton"
             }
           }
         ]
