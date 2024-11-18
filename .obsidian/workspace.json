@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6d7788446f51b905",
+        "id": "8f7199f8c6dafc8d",
         "type": "tabs",
         "children": [
           {
-            "id": "c2623fb1fe4466fa",
+            "id": "00c2ce0abc260d3f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -162,23 +162,27 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "c2623fb1fe4466fa",
+  "active": "00c2ce0abc260d3f",
   "lastOpenFiles": [
-    "templates/template_patrones.md",
+    "Parcial_2/02-Patrones_de_diseño/00-material/07 - Guía TP - Patrones de Diseño.pdf",
+    "Parcial_1/examples/example.md",
+    "img/structure-singleton.png",
+    "templates/Pasted image 20241114115449.png",
     "Parcial_2/02-Patrones_de_diseño/01-Creacional/01-Singleton.md",
+    "img",
+    "Parcial_2/02-Patrones_de_diseño/01-Creacional/02-Factory Method.md",
+    "templates/template_patrones.md",
     "templates",
     "Parcial_2/02-Patrones_de_diseño/03-Comportamiento/02-Observer.md",
     "Parcial_2/02-Patrones_de_diseño/03-Comportamiento/01-State.md",
     "Parcial_2/02-Patrones_de_diseño/02-Estructural/02-Proxy.md",
     "Parcial_2/02-Patrones_de_diseño/02-Estructural/01-Facade.md",
-    "Parcial_2/02-Patrones_de_diseño/01-Creacional/02-Factory Method.md",
     "Parcial_2/02-Patrones_de_diseño/00-Lista de Patrones.md",
     "Parcial_2/02-Patrones_de_diseño/03-Comportamiento",
     "Parcial_2/02-Patrones_de_diseño/02-Estructural",
     "Parcial_2/02-Patrones_de_diseño/01-Creacional",
     "Parcial_2/02-Patrones_de_diseño/00-material",
     "Parcial_2/Lista de Temas.md",
-    "Parcial_2/02-Patrones_de_diseño/00-material/Resumen Patrones de Diseño.pdf",
-    "Parcial_2/02-Patrones_de_diseño/00-material/07 - Guía TP - Patrones de Diseño.pdf"
+    "Parcial_2/02-Patrones_de_diseño/00-material/Resumen Patrones de Diseño.pdf"
   ]
 }
