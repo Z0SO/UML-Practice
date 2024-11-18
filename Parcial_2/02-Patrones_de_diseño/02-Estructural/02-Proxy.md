@@ -1,0 +1,1 @@
+![Ejemplo de estructura del patrón Proxy](https://refactoring.guru/images/patterns/diagrams/proxy/example.png)
