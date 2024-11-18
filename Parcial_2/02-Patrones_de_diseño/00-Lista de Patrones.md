@@ -6,8 +6,8 @@
 
 #### Estructurales
 - [x] Facade
-- [ ] Proxy
+- [x] Proxy
 
 #### Comportamiento
-- [ ] Sate
-- [ ] Observer
+- [x] Sate
+- [x] Observer

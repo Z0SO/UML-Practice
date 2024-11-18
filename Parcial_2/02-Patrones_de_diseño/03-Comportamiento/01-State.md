@@ -31,6 +31,10 @@ El patrón **State** resuelve este problema al delegar el comportamiento de cada
 
 El patrón **State** sugiere crear clases específicas para cada uno de los posibles estados de un objeto. El objeto principal (el **Contexto**) almacena una referencia a un objeto de estado y delega todo el trabajo relacionado con ese estado a dicho objeto. Para cambiar de estado, el contexto simplemente reemplaza el objeto de estado actual por uno nuevo, sin necesidad de modificar la clase de contexto.
 
+![Documento delega el trabajo a un objeto de estado](https://refactoring.guru/images/patterns/diagrams/state/solution-es.png)
+
+Documento delega el trabajo a un objeto de estado.
+
 Este enfoque permite agregar nuevos estados o cambiar los existentes de manera independiente, mejorando la mantenibilidad y la extensión del código.
 
 ### Aplicabilidad
@@ -41,6 +45,15 @@ Utiliza el patrón **State** cuando:
 - El número de estados es grande y cambia con frecuencia.
 - El código de la clase está lleno de condicionales que alteran el comportamiento según los valores de los campos.
 - Existen comportamientos duplicados para estados similares y transiciones complejas entre los estados.
+
+
+#### Analogía en el mundo real
+
+Los botones e interruptores de tu smartphone se comportan de forma diferente dependiendo del estado actual del dispositivo:
+
+- Cuando el teléfono está desbloqueado, al pulsar botones se ejecutan varias funciones.
+- Cuando el teléfono está bloqueado, pulsar un botón desbloquea la pantalla.
+- Cuando la batería del teléfono está baja, pulsar un botón muestra la pantalla de carga.
 
 ---
 
