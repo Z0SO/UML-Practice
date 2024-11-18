@@ -21,7 +21,7 @@ Considere dos variantes para el problema:
 hide empty description
 
 'definir el sentirdo de derecha a izquierda
-top to bottom direction
+left to right direction
 
 ' Definicion de estados
 state "Detenido" as detenido
@@ -30,13 +30,42 @@ state "Bajando" as bajando
 
 [*] -> detenido
 
-detenido -> subiendo: [ si solicitud > piso actual ]/Solicitud para ir a un piso superior
-detenido -> bajando: [ si solicitud < piso actual ]/Solicitud para ir a un piso inferior
+detenido --> subiendo: [ si solicitud > piso actual ]/Solicitud para ir a un piso superior
+detenido --> bajando: [ si solicitud < piso actual ]/Solicitud para ir a un piso inferior
 
-subiendo -> detenido: Piso alcanzado
-bajando -> detenido: Piso alcanzado
+subiendo --> detenido : Alcanazar piso superior
+bajando --> detenido : Alcanzar piso inferior
 
+detenido -> [*]
 
 @enduml
 ```
 
+
+### Ascensor con memoria
+
+```plantuml
+@startuml
+hide empty description
+
+state "Detenido" as detenido {
+    state "Sin solicitudes" as sinSolicitudes
+    state "Con solicitudes" as conSolicitudes
+    sinSolicitudes --> conSolicitudes: Recibir solicitud
+    conSolicitudes --> sinSolicitudes: Todas las solicitudes atendidas
+}
+
+state "Subiendo" as subiendo
+state "Bajando" as bajando
+
+[*] --> detenido
+
+detenido --> subiendo: [Solicitud > Piso actual]
+detenido --> bajando: [Solicitud < Piso actual]
+
+subiendo --> detenido: Alcanzar piso más cercano arriba
+bajando --> detenido: Alcanzar piso más cercano abajo
+
+detenido --> [*]
+@enduml
+```
