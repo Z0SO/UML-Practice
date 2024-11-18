@@ -3,8 +3,6 @@
 ## Concepto
 
 El patrón Singleton resuelve dos problemas al mismo tiempo, vulnerando el _Principio de responsabilidad única_ (Principio solid SRP):
-
-
 #### Estructura (Diagrama de Clases)
 
 ![[structure-singleton.png]]
