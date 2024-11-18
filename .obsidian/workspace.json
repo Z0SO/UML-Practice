@@ -91,7 +91,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "fab04d3c7646a27f",
@@ -176,7 +177,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "3433555942bf848b",
+  "active": "00c2ce0abc260d3f",
   "lastOpenFiles": [
     "Parcial_2/02-Patrones_de_diseño/01-Creacional/01-Singleton.md",
     "Parcial_2/02-Patrones_de_diseño/00-material/Resumen Patrones de Diseño.pdf",
