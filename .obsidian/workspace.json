@@ -11,12 +11,14 @@
             "id": "00c2ce0abc260d3f",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Parcial_2/02-Patrones_de_diseño/00-material/Resumen Patrones de Diseño.pdf"
+                "file": "Parcial_2/02-Patrones_de_diseño/01-Creacional/02-Factory Method.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Resumen Patrones de Diseño"
+              "icon": "lucide-file",
+              "title": "02-Factory Method"
             }
           },
           {
@@ -174,12 +176,12 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "00c2ce0abc260d3f",
+  "active": "3433555942bf848b",
   "lastOpenFiles": [
-    "Parcial_2/02-Patrones_de_diseño/00-Lista de Patrones.md",
-    "Parcial_2/02-Patrones_de_diseño/00-material/Resumen Patrones de Diseño.pdf",
-    "Parcial_2/Lista de Temas.md",
     "Parcial_2/02-Patrones_de_diseño/01-Creacional/01-Singleton.md",
+    "Parcial_2/02-Patrones_de_diseño/00-material/Resumen Patrones de Diseño.pdf",
+    "Parcial_2/02-Patrones_de_diseño/00-Lista de Patrones.md",
+    "Parcial_2/Lista de Temas.md",
     "Parcial_2/02-Patrones_de_diseño/00-material/07 - Guía TP - Patrones de Diseño.pdf",
     "Parcial_1/examples/example.md",
     "img/structure-singleton.png",

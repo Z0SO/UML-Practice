@@ -1,143 +1,170 @@
 
 ---
-## Concepto
-**Singleton** es un patrón de diseño creacional que nos permite asegurarnos de que una clase tenga una única instancia, a la vez que proporciona un punto de acceso global a dicha instancia.
+# **Patrón de Diseño Singleton**
+
+El **Singleton** es un patrón de diseño **creacional** que garantiza que una clase tenga **una única instancia** y proporciona un punto de acceso global a esta. Es especialmente útil en casos donde se debe controlar el acceso a recursos compartidos, como bases de datos o archivos.
+
+---
+
+## **Concepto**
+El Singleton asegura que una clase:
+
+1. **Solo tiene una instancia.**  
+   Esto es útil para gestionar recursos compartidos, ya que previene la creación de múltiples instancias innecesarias o conflictivas.
+
+2. **Ofrece un acceso global a esa instancia.**  
+   Es similar a una variable global, pero más controlada y segura, ya que evita modificaciones no autorizadas desde otras partes del programa.
 
 ![Patrón Singleton](https://refactoring.guru/images/patterns/content/singleton/singleton.png)
 
-### Problema
+---
 
-El patrón Singleton resuelve dos problemas al mismo tiempo, vulnerando el _Principio de responsabilidad única_:
+## **Problemas que resuelve**
 
-1. **Garantizar que una clase tenga una única instancia**. ¿Por qué querría alguien controlar cuántas instancias tiene una clase? El motivo más habitual es controlar el acceso a algún recurso compartido, por ejemplo, una base de datos o un archivo.
-    
-    Funciona así: imagina que has creado un objeto y al cabo de un tiempo decides crear otro nuevo. En lugar de recibir un objeto nuevo, obtendrás el que ya habías creado.
-    
-    Ten en cuenta que este comportamiento es imposible de implementar con un constructor normal, ya que una llamada al constructor siempre **debe** devolver un nuevo objeto por diseño.
-    
+El patrón Singleton aborda dos problemas principales, aunque esto puede violar el **Principio de Responsabilidad Única (SRP)**:
+
+### 1. **Garantizar una única instancia**
+Este control es importante para manejar recursos compartidos, como:
+
+- **Bases de datos:** Una sola conexión para evitar conflictos.
+- **Archivos:** Controlando accesos múltiples.
+
+#### Ejemplo:
+Si intentas crear un segundo objeto de una clase Singleton, simplemente obtendrás la misma instancia inicial. Este comportamiento no es posible con constructores normales, ya que estos siempre crean una nueva instancia.
 
 ![El acceso global a un objeto](https://refactoring.guru/images/patterns/content/singleton/singleton-comic-1-es.png)
 
-Puede ser que los clientes ni siquiera se den cuenta de que trabajan con el mismo objeto todo el tiempo.
-
-2. **Proporcionar un punto de acceso global a dicha instancia**. ¿Recuerdas esas variables globales que utilizaste (bueno, sí, fui yo) para almacenar objetos esenciales? Aunque son muy útiles, también son poco seguras, ya que cualquier código podría sobrescribir el contenido de esas variables y descomponer la aplicación.
-    
-    Al igual que una variable global, el patrón Singleton nos permite acceder a un objeto desde cualquier parte del programa. No obstante, también evita que otro código sobreescriba esa instancia.
-    
-    Este problema tiene otra cara: no queremos que el código que resuelve el primer problema se encuentre disperso por todo el programa. Es mucho más conveniente tenerlo dentro de una clase, sobre todo si el resto del código ya depende de ella.
-    
-
-Hoy en día el patrón Singleton se ha popularizado tanto que la gente suele llamar _singleton_ a cualquier patrón, incluso si solo resuelve uno de los problemas antes mencionados.
-
-### Solución
-
-Todas las implementaciones del patrón Singleton tienen estos dos pasos en común:
-
-- Hacer privado el constructor por defecto para evitar que otros objetos utilicen el operador `new` con la clase Singleton.
-- Crear un método de creación estático que actúe como constructor. Tras bambalinas, este método invoca al constructor privado para crear un objeto y lo guarda en un campo estático. Las siguientes llamadas a este método devuelven el objeto almacenado en caché.
-
-Si tu código tiene acceso a la clase Singleton, podrá invocar su método estático. De esta manera, cada vez que se invoque este método, siempre se devolverá el mismo objeto.
-
-### Analogía en el mundo real
-
-El gobierno es un ejemplo excelente del patrón Singleton. Un país sólo puede tener un gobierno oficial. Independientemente de las identidades personales de los individuos que forman el gobierno, el título “Gobierno de X” es un punto de acceso global que identifica al grupo de personas a cargo.
-El patrón Singleton resuelve dos problemas al mismo tiempo, vulnerando el _Principio de responsabilidad única_ (Principio solid SRP):
 
 
-Todas las implementaciones del patrón Singleton tienen estos dos pasos en común:
-
-- Hacer privado el constructor por defecto para evitar que otros objetos utilicen el operador `new` con la clase Singleton.
-- Crear un método de creación estático que actúe como constructor. Tras bambalinas, este método invoca al constructor privado para crear un objeto y lo guarda en un campo estático. Las siguientes llamadas a este método devuelven el objeto almacenado en caché.
-
-Si tu código tiene acceso a la clase Singleton, podrá invocar su método estático. De esta manera, cada vez que se invoque este método, siempre se devolverá el mismo objeto.
-
-#### Estructura (Diagrama de Clases)
-
-![[structure-singleton.png]]
-1. La clase **Singleton** declara el método estático `obtenerInstancia` que devuelve la misma instancia de su propia clase.
-
-    El constructor del Singleton debe ocultarse del código cliente. La llamada al método `obtenerInstancia` debe ser la única manera de obtener el objeto de Singleton.
+### 2. **Proporcionar acceso global**
+El Singleton permite que cualquier parte del programa acceda a su instancia sin usar variables globales, reduciendo el riesgo de errores por sobrescritura. También centraliza el control, manteniendo el código más organizado.
 
 ---
-## Aplicabilidad
 
-Utiliza el patrón Singleton cuando una clase de tu programa tan solo deba tener una instancia disponible para todos los clientes; por ejemplo, un único objeto de base de datos compartido por distintas partes del programa.
+## **Solución**
 
-El patrón Singleton deshabilita el resto de las maneras de crear objetos de una clase, excepto el método especial de creación. Este método crea un nuevo objeto, o bien devuelve uno existente si ya ha sido creado.
+El patrón Singleton se implementa siguiendo dos pasos clave:
 
-Utiliza el patrón Singleton cuando necesites un control más estricto de las variables globales.
+1. **Constructor privado:**  
+   Esto evita que se creen nuevas instancias directamente usando el operador `new`.
 
-Al contrario que las variables globales, el patrón Singleton garantiza que haya una única instancia de una clase. A excepción de la propia clase Singleton, nada puede sustituir la instancia en caché.
-
-Ten en cuenta que siempre podrás ajustar esta limitación y permitir la creación de cierto número de instancias Singleton. La única parte del código que requiere cambios es el cuerpo del método `getInstance`.
-
-## Cómo implementarlo
-
-1. Añade un campo estático privado a la clase para almacenar la instancia Singleton.
-    
-2. Declara un método de creación estático público para obtener la instancia Singleton.
-    
-3. Implementa una inicialización diferida dentro del método estático. Debe crear un nuevo objeto en su primera llamada y colocarlo dentro del campo estático. El método deberá devolver siempre esa instancia en todas las llamadas siguientes.
-    
-4. Declara el constructor de clase como privado. El método estático de la clase seguirá siendo capaz de invocar al constructor, pero no a los otros objetos.
-    
-5. Repasa el código cliente y sustituye todas las llamadas directas al constructor de la instancia Singleton por llamadas a su método de creación estático.
-#### Codigo (Esto pide GG)
+2. **Método estático:**  
+   Este método actúa como constructor. Si la instancia no existe, la crea; si ya existe, devuelve la misma instancia.
 
 ```java
-// La clase Base de datos define el método `obtenerInstancia`
-// que permite a los clientes acceder a la misma instancia de
-// una conexión de la base de datos a través del programa.
-class Database is
-    // El campo para almacenar la instancia singleton debe
-    // declararse estático.
-    private static field instance: Database
+class Singleton {
+    private static Singleton instancia;
 
-    // El constructor del singleton siempre debe ser privado
-    // para evitar llamadas de construcción directas con el
-    // operador `new`.
-    private constructor Database() is
-        // Algún código de inicialización, como la propia
-        // conexión al servidor de una base de datos.
-        // ...
-    // El método estático que controla el acceso a la instancia
-    // singleton.
-    public static method getInstance() is
-        if (Database.instance == null) then
-            acquireThreadLock() and then
-                // Garantiza que la instancia aún no se ha
-                // inicializado por otro hilo mientras ésta ha
-                // estado esperando el desbloqueo.
-                if (Database.instance == null) then
-                    Database.instance = new Database()
-        return Database.instance
+    private Singleton() {
+        // Inicialización
+    }
 
-    // Por último, cualquier singleton debe definir cierta
-    // lógica de negocio que pueda ejecutarse en su instancia.
-    public method query(sql) is
-        // Por ejemplo, todas las consultas a la base de datos
-        // de una aplicación pasan por este método. Por lo
-        // tanto, aquí puedes colocar lógica de regularización
-        // (throttling) o de envío a la memoria caché.
-        // ...
-
-class Application is
-    method main() is
-        Database foo = Database.getInstance()
-        foo.query("SELECT ...")
-        // ...
-        Database bar = Database.getInstance()
-        bar.query("SELECT ...")
-        // La variable `bar` contendrá el mismo objeto que la
-        // variable `foo`.
+    public static Singleton getInstance() {
+        if (instancia == null) {
+            instancia = new Singleton();
+        }
+        return instancia;
+    }
+}
 ```
 
+---
+
+## **Analogía Real**
+
+El **Gobierno** es un ejemplo perfecto de Singleton:
+
+- Un país solo tiene un gobierno oficial.  
+- Desde cualquier parte del país, se accede al gobierno como un único punto de referencia.  
 
 ---
-### Ventajas y Desventajas
 
-| **VENTAJAS**                                                                                                                                                                                                     | **DESVENTAJAS**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| - Puedes tener la certeza de que una clase tiene una única instancia.<br>- Obtienes un punto de acceso global a dicha instancia.<br>- El objeto Singleton solo se inicializa cuando se requiere por primera vez. | - Vulnera el _Principio de responsabilidad única_. El patrón resuelve dos problemas al mismo tiempo.<br>- El patrón Singleton puede enmascarar un mal diseño, por ejemplo, cuando los componentes del programa saben demasiado los unos sobre los otros.<br>- El patrón requiere de un tratamiento especial en un entorno con múltiples hilos de ejecución, para que varios hilos no creen un objeto Singleton varias veces.<br>- Puede resultar complicado realizar la prueba unitaria del código cliente del Singleton porque muchos _frameworks_ de prueba dependen de la herencia a la hora de crear objetos simulados (mock objects). Debido a que la clase Singleton es privada y en la mayoría de los lenguajes resulta imposible sobrescribir métodos estáticos, tendrás que pensar en una manera original de simular el Singleton. O, simplemente, no escribas las pruebas. O no utilices el patrón Singleton. |
+## **Estructura del Patrón**
 
-1
+
+![[structure-singleton.png]]
+
+1. **Clase Singleton:**  
+   Declara un método estático (`obtenerInstancia`) que garantiza el acceso a una única instancia.
+
+---
+
+## **Aplicabilidad**
+
+Utiliza este patrón cuando:
+
+1. Necesites garantizar una única instancia, como:
+   - Conexiones de base de datos.
+   - Gestores de configuración.
+
+2. Quieras evitar la dispersión del control de acceso, reemplazando variables globales inseguras.
+
+3. Necesites control sobre el número de instancias creadas, permitiendo ajustes en el método `getInstance`.
+
+---
+
+## **Implementación**
+
+### **Pasos:**
+
+1. **Campo estático privado:**  
+   Almacena la instancia única.
+
+2. **Método estático público:**  
+   Devuelve la instancia única, creando una nueva si no existe.
+
+3. **Constructor privado:**  
+   Restringe la creación de instancias fuera de la clase.
+
+4. **Ajustar código cliente:**  
+   Sustituir llamadas directas al constructor por el método estático.
+
+---
+
+## **Ejemplo en Código**
+
+```java
+class Database {
+    private static Database instance;
+
+    private Database() {
+        // Inicialización, como conexión a la base de datos.
+    }
+
+    public static synchronized Database getInstance() {
+        if (instance == null) {
+            instance = new Database();
+        }
+        return instance;
+    }
+
+    public void query(String sql) {
+        // Lógica para consultas.
+    }
+}
+
+class Application {
+    public static void main(String[] args) {
+        Database db1 = Database.getInstance();
+        db1.query("SELECT * FROM users");
+
+        Database db2 = Database.getInstance();
+        db2.query("SELECT * FROM orders");
+
+        // Ambas referencias (db1 y db2) apuntan a la misma instancia.
+    }
+}
+```
+
+---
+
+## **Ventajas y Desventajas**
+
+| **Ventajas**                                                                                                       | **Desventajas**                                                                                                                                                                                                 |
+|--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| - Garantiza una única instancia.                                                                                   | - **Viola el Principio de Responsabilidad Única.** Combina múltiples responsabilidades en una sola clase.                                                              |
+| - Punto de acceso global a la instancia.                                                                           | - Puede enmascarar un mal diseño al permitir dependencia excesiva entre componentes.                                                                                   |
+| - Inicialización solo cuando se requiere, ahorrando recursos.                                                      | - Requiere manejo especial en aplicaciones multihilo para evitar instancias duplicadas.                                                                                |
+|                                                                                                                    | - Dificulta pruebas unitarias, ya que los métodos estáticos y constructores privados son difíciles de simular en muchos lenguajes.                                      |
+
+---
