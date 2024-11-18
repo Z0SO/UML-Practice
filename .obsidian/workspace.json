@@ -11,10 +11,12 @@
             "id": "1712912ac9726c91",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "type": "pdf",
+              "state": {
+                "file": "Parcial_2/02-Patrones_de_diseño/00-material/Resumen Patrones de Diseño.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Resumen Patrones de Diseño"
             }
           }
         ]
@@ -73,7 +75,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "fab04d3c7646a27f",
