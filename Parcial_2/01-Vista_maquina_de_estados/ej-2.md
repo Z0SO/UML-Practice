@@ -64,3 +64,94 @@ colgado --> [*]
 
 @enduml
 ```
+
+
+----
+
+#### Correciones segun Dios
+
+Tu resolución en PlantUML es bastante clara y está bien estructurada, pero hay algunos detalles que podrían mejorarse para hacerla más precisa en cuanto a sintaxis y legibilidad. Aquí te dejo una corrección y algunos comentarios:
+
+### Correcciones y Sugerencias:
+
+1. **Dirección del Diagrama**:
+   En el diagrama, usas la dirección `top to bottom direction`, lo cual está bien, pero ten en cuenta que algunos diagramas de estado se leen mejor de izquierda a derecha, especialmente cuando las transiciones son lineales. No es un error, solo una recomendación para que puedas experimentar.
+
+2. **Uso de Condiciones de Guarda**:
+   Las condiciones de guarda se colocan en la transición, pero las has colocado entre corchetes en algunas transiciones. Aunque esto es correcto, deberías especificar las condiciones con mayor claridad, como en las transiciones de `marcando` a `tiempoAgotado` y `conectando`.
+
+3. **Transiciones con Texto Específico**:
+   Algunas transiciones tienen el texto redundante o no lo suficientemente claro. Como ejemplo:
+   - `conectando ---> llamando: [linea libre]/Sonando` → Aquí, la acción de "Sonando" es más una descripción del estado que una acción a realizar.
+   - Deberías mantener las transiciones lo más simples posible. La acción de "Sonando" puede ir directamente como parte del estado de `Llamando`.
+
+4. **Transiciones Finales**:
+   La transición de `marcando` a `tiempoAgotado` tiene la condición `[tiempo > 15s]/Tiempo Agotado`. Esto es válido, pero el texto dentro de los corchetes es innecesario si la condición de tiempo ya está representada por `tiempo > 15s`. Además, la acción después de esta transición debería indicar claramente el final del proceso, no solo `[ * ]`, que puede ser confuso. Es mejor ponerlo como una descripción clara del estado final.
+
+5. **Uso de `[*]`**:
+   El uso de `[ * ]` para indicar el estado inicial y final está correcto, pero en algunas transiciones, podrías aclarar un poco más cómo fluye el proceso.
+
+### Corrección sugerida del diagrama:
+
+```plantuml
+@startuml
+
+hide empty description
+
+' Definir la dirección del diagrama (opcionalmente derecha a izquierda)
+top to bottom direction
+
+' Definir los estados
+state "Colgado" as colgado
+state "Descolgado" as descolgado
+state "Tono de Marcado" as tonoDeMarcado
+state "Marcando" as marcando
+state "Tiempo de Marcado Agotado" as tiempoAgotado
+state "Conectando" as conectando
+state "Ocupado" as ocupado
+state "Llamando" as llamando
+state "Hablando" as hablando
+
+' Estado inicial
+[*] -> colgado
+
+' Transiciones
+colgado -> descolgado: Descolgar
+descolgado --> tonoDeMarcado: Iniciar Marcado
+tonoDeMarcado ---> marcando: Marcando número
+
+' Transiciones desde "Marcando"
+marcando --> tiempoAgotado: [tiempo > 15s]
+marcando --> conectando: [tiempo <= 15s]
+
+' Transiciones desde "Conectando"
+conectando ---> ocupado: [línea ocupada]
+conectando ---> llamando: [línea libre]
+
+' Transiciones desde "Llamando"
+llamando ---> hablando: [receptor atiende]
+llamando --> [*]: [receptor no atiende]
+
+' Transición final
+hablando --> colgado: Colgar
+
+' Estado final
+colgado --> [*]
+
+@enduml
+```
+
+### Explicación de los cambios:
+
+1. **Clarificación en las transiciones**:
+   - Se separó la transición de `marcando` a `tiempoAgotado` y `conectando` para que las condiciones sean más claras.
+   - La transición de `conectando` a `llamando` y `ocupado` también se mejoró para aclarar las condiciones.
+
+2. **Acciones y estados**:
+   - Mantenemos las acciones y condiciones al mínimo, usando directamente las condiciones de transición sin redundancias.
+
+3. **Uso del estado "Tiempo de Marcado Agotado"**:
+   - Se cambió el nombre de `Tiempo Agotado` por `Tiempo de Marcado Agotado` para alinearlo mejor con la descripción del ejercicio.
+
+### Resumen de la mejora:
+El diagrama ahora refleja de manera más precisa las transiciones y condiciones, y el código está optimizado para mejor legibilidad. Los eventos y acciones están mejor definidos y las transiciones son más claras.
