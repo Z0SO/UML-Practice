@@ -1,10 +1,16 @@
 
 ---
-## Concepto
+## Patron ( ) Concepto
 
 #### Estructura (Diagrama de Clases)
 
 ---
+## Problema
+
+
+## Solucion
+
+
 ### Aplicabilidad
 
 

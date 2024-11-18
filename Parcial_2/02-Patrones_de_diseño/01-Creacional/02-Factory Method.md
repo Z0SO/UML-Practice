@@ -27,7 +27,9 @@ Con el tiempo, necesitas añadir soporte para transporte **marítimo**. Sin emba
 
 El **patrón Factory Method** sugiere reemplazar la creación directa de objetos mediante el operador `new` con la invocación de un **método fábrica**. Este método encapsula la creación de los objetos, aunque internamente siga utilizando el operador `new`. Los objetos generados a través del método fábrica son comúnmente denominados **productos**.
 
----
+![La estructura de las clases creadoras](https://refactoring.guru/images/patterns/diagrams/factory-method/solution1.png)
+
+*Las subclases pueden alterar la clase de los objetos devueltos por el método fábrica.*
 
 ### Estructura de las **clases creadoras**
 
@@ -40,11 +42,11 @@ Aunque a simple vista parezca que solo se está cambiando el lugar donde se invo
 - Las subclases solo pueden devolver productos de **distintos tipos** si estos comparten una **clase base** o una **interfaz común**.
 - El método fábrica de la clase base debe declarar su tipo de retorno como la interfaz o clase base común.
 
----
-
 #### Estructura de la **jerarquía de productos**
 
-Todos los productos generados mediante el método fábrica deben implementar una **interfaz común**.
+![La estructura de la jerarquía de productos](https://refactoring.guru/images/patterns/diagrams/factory-method/solution2-es.png)
+
+*Todos los productos generados mediante el método fábrica deben implementar una **interfaz común**.*
 
 #### Ejemplo:
 - **Interfaz común**: `Transporte`
@@ -55,11 +57,11 @@ Las clases creadoras específicas, como `LogísticaTerrestre` y `LogísticaMarí
 - **LogísticaTerrestre** devuelve **Camiones**.
 - **LogísticaMarítima** devuelve **Barcos**.
 
----
-
 ### Estructura del código con el patrón Factory Method
 
-Siempre que los productos implementen una interfaz común, el código cliente puede utilizar sus objetos sin necesidad de conocer sus detalles internos.
+![La estructura del código tras aplicar el patrón Factory Method](https://refactoring.guru/images/patterns/diagrams/factory-method/solution3-es.png)
+
+*Siempre que los productos implementen una interfaz común, el código cliente puede utilizar sus objetos sin necesidad de conocer sus detalles internos.*
 
 #### Beneficio clave:
 El código cliente (que utiliza el método fábrica) no encuentra diferencias entre los productos retornados por diversas subclases. Simplemente interactúa con ellos como instancias de la clase base o interfaz común, como en el caso de `Transporte`.
@@ -72,11 +74,43 @@ Si luego necesitas agregar transporte **aéreo**, tendrías que repetir este pro
 
 #### Estructura (Diagrama de Clases)
 
+![La estructura del patrón Factory Method](https://refactoring.guru/images/patterns/diagrams/factory-method/structure-indexed.png)
 
-![La estructura de las clases creadoras](https://refactoring.guru/images/patterns/diagrams/factory-method/solution1.png)
 
-Las subclases pueden alterar la clase de los objetos devueltos por el método fábrica.
+##### Explicación Simplificada del Diagrama
 
+1. **El Producto**  
+   - Es una **interfaz común** que define las características básicas que tendrán todos los objetos creados.  
+   - Sirve para que cualquier objeto (producto) cumpla con un conjunto de reglas estándar.
+
+2. **Productos Concretos**  
+   - Son implementaciones específicas de la interfaz del producto.  
+   - Por ejemplo, si el producto es un "Transporte", los productos concretos pueden ser "Camión" o "Barco", cada uno con su comportamiento particular.
+
+3. **La Clase Creadora**  
+   - Es la clase que contiene el **método fábrica**, encargado de crear los objetos del tipo definido por la interfaz del producto.  
+   - El **tipo de retorno** del método fábrica debe coincidir con la interfaz del producto para garantizar que los objetos creados sean compatibles.
+
+4. **Subclases de la Creadora**  
+   - Las subclases pueden sobrescribir el método fábrica para producir diferentes tipos de productos.  
+   - Por ejemplo, una subclase puede especializarse en crear "Camiones" y otra en "Barcos". Esto permite flexibilidad y adaptación sin modificar el código original.
+
+###### Analogía Simple: Una Empresa de Software
+
+Imagina que una empresa de software tiene un departamento de formación de programadores, pero su principal trabajo no es formar personas, sino desarrollar software.  
+- **La empresa (Clase Creadora)**: Realiza actividades principales (negocio principal) y usa el método fábrica para gestionar los productos (como programadores).  
+- **El método fábrica**: Decide cómo formar a los programadores.  
+- **Los programadores (Productos)**: Son creados según un estándar definido (interfaz). Por ejemplo, pueden especializarse en diferentes lenguajes de programación.  
+
+##### Más Consideraciones del Método Fábrica
+
+1. **Forzar subclases a implementar el método**  
+   - Puedes hacer que el método fábrica sea **abstracto**, obligando a cada subclase a definir su propia forma de crear productos.
+
+2. **Opción de devolver productos existentes**  
+   - El método fábrica no siempre tiene que crear algo nuevo. También puede usar productos que ya existan, como sacarlos de una memoria caché o de un grupo de objetos precreados.
+
+Este patrón te ayuda a **separar la lógica de negocio** de la creación de objetos específicos, haciéndolo más flexible y fácil de mantener.
 
 ### **Pseudocódigo**
 
