@@ -51,14 +51,18 @@ hide empty description
 state "Detenido" as detenido 
 state "Subiendo" as subiendo
 state "Bajando" as bajando
+state "Detenido con solicitudes" as detenidoConSolicitudes
 
+state "Ordenando solicitudes" as ordenandoSolicitudes
 
 
 [*] -> detenido: Encender
 
-detenido --> subiendo: [ si solicitud > piso actual ]/Solicitud para ir a un piso superior
+detenido -> ordenandoSolicitudes: Solicitud para ir a un piso
 
-subiendo -> detenido: []
+ordenandoSolicitudes --> subiendo: Ir a un piso superior [ si (cantSolicitudes <= 5) y (pisoActual < pisoDestino) ]
+
+ordenandoSolicitudes --> bajando: Ir a un piso inferior [ si (cantSolicitudes <= 5) y (pisoActual > pisoDestino) ]
 
 detenido --> [*]: Apagar
 @enduml
