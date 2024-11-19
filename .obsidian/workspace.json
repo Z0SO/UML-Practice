@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1ef0a8d624d0e892",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Parcial_2/03-Diseño de Pantallas/ej-1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ej-1"
-            }
-          },
-          {
             "id": "7fdee810eca95699",
             "type": "leaf",
             "state": {
@@ -33,8 +19,7 @@
               "title": "Release Notes 1.7.7"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,6 +162,17 @@
   },
   "active": "7fdee810eca95699",
   "lastOpenFiles": [
+    "img/Pasted image 20241119010441.png",
+    "img/Pasted image 20241119010410.png",
+    "img/Pasted image 20241118233558.png",
+    "img/Pasted image 20241114115449.png",
+    "Parcial_2/03-Diseño_de_Pantallas/ej-1.md",
+    "Parcial_2/03-Diseño_de_Pantallas/00-material/Temas.md",
+    "Parcial_2/03-Diseño_de_Pantallas/00-material/Clase.md",
+    "Parcial_2/03-Diseño_de_Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf",
+    "Parcial_2/03-Diseño_de_Pantallas/00-material/00-Par2_Modelos_Indexado_compressed.pdf",
+    "Parcial_2/03-Diseño_de_Pantallas/00-material",
+    "Parcial_2/03-Diseño_de_Pantallas",
     "Pasted image 20241119010441.png",
     "Pasted image 20241119010410.png",
     "Parcial_2/03-Diseño de Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf",
@@ -206,12 +202,8 @@
     "Repaso Recuperatorio.md",
     "Parcial_2/02-Patrones_de_diseño/02-Estructural/02-Proxy.md",
     "Parcial_2/02-Patrones_de_diseño/01-Creacional/02-Factory Method.md",
-    "Parcial_2/02-Patrones_de_diseño/00-material/07 - Guía TP - Patrones de Diseño.pdf",
     "Parcial_1/examples/example.md",
     "img/structure-singleton.png",
-    "templates/Pasted image 20241114115449.png",
-    "img",
-    "templates",
-    "Parcial_2/02-Patrones_de_diseño/03-Comportamiento"
+    "templates/Pasted image 20241114115449.png"
   ]
 }
