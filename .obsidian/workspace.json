@@ -11,12 +11,14 @@
             "id": "1ef0a8d624d0e892",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Parcial_2/03-Diseño de Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf"
+                "file": "Parcial_2/03-Diseño de Pantallas/ej-1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "08 - Guia TP - Entradas y Salidas -2024"
+              "icon": "lucide-file",
+              "title": "ej-1"
             }
           }
         ]
@@ -160,8 +162,12 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "1ef0a8d624d0e892",
+  "active": "3433555942bf848b",
   "lastOpenFiles": [
+    "Pasted image 20241119010441.png",
+    "Pasted image 20241119010410.png",
+    "Parcial_2/03-Diseño de Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf",
+    "Parcial_2/03-Diseño de Pantallas/ej-1.md",
     "Parcial_2/03-Diseño de Pantallas/00-material/Clase.md",
     "Parcial_2/03-Diseño de Pantallas/00-material/Temas.md",
     "Parcial_2/01-Vista_maquina_de_estados/ej-3.md",
@@ -171,11 +177,9 @@
     "Parcial_2/01-Vista_maquina_de_estados/ej-1.md",
     "Parcial_2/01-Vista_maquina_de_estados/ej-6.md",
     "Parcial_2/01-Vista_maquina_de_estados/ej-5.md",
-    "Parcial_2/03-Diseño de Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf",
     "Parcial_2/Lista de Temas.md",
     "Parcial_2/02-Patrones_de_diseño/01-Creacional/01-Singleton.md",
     "Parcial_2/03-Diseño de Pantallas/00-material",
-    "Parcial_2/03-Diseño de Pantallas/Sin título.md",
     "Parcial_2/03-Diseño de Pantallas",
     "Sin nombre",
     "Parcial_2/02-Patrones_de_diseño/02-Estructural/01-Facade.md",
