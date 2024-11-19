@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "ej-1"
             }
+          },
+          {
+            "id": "7fdee810eca95699",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.7"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,7 +175,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "3433555942bf848b",
+  "active": "7fdee810eca95699",
   "lastOpenFiles": [
     "Pasted image 20241119010441.png",
     "Pasted image 20241119010410.png",
