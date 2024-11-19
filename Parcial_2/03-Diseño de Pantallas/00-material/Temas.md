@@ -1,0 +1,4 @@
+- [ ] Diagrama de Warnierr
+- [ ] Diseño de Reportes
+- [ ] Diseño de Pantallas
+- [ ] Diagrama de Navegación

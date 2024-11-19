@@ -11,12 +11,14 @@
             "id": "1ef0a8d624d0e892",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Parcial_2/03-Diseño de Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf"
+                "file": "Parcial_2/03-Diseño de Pantallas/00-material/Temas.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "08 - Guia TP - Entradas y Salidas -2024"
+              "icon": "lucide-file",
+              "title": "Temas"
             }
           }
         ]
@@ -162,8 +164,10 @@
   },
   "active": "1ef0a8d624d0e892",
   "lastOpenFiles": [
-    "Parcial_2/Lista de Temas.md",
+    "Parcial_2/03-Diseño de Pantallas/00-material/Clase.md",
+    "Parcial_2/03-Diseño de Pantallas/00-material/Temas.md",
     "Parcial_2/03-Diseño de Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf",
+    "Parcial_2/Lista de Temas.md",
     "Parcial_2/02-Patrones_de_diseño/01-Creacional/01-Singleton.md",
     "Parcial_2/03-Diseño de Pantallas/00-material",
     "Parcial_2/03-Diseño de Pantallas/Sin título.md",
