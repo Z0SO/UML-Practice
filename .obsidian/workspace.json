@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Parcial_2/03-Diseño de Pantallas/00-material/Clase.md",
+                "file": "Parcial_2/03-Diseño de Pantallas/00-material/Temas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Clase"
+              "title": "Temas"
             }
           }
         ]
@@ -164,8 +164,15 @@
   },
   "active": "1ef0a8d624d0e892",
   "lastOpenFiles": [
-    "Parcial_2/03-Diseño de Pantallas/00-material/Temas.md",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-3.md",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-2.md",
+    "Pasted image 20241118233558.png",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-4.md",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-1.md",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-6.md",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-5.md",
     "Parcial_2/03-Diseño de Pantallas/00-material/Clase.md",
+    "Parcial_2/03-Diseño de Pantallas/00-material/Temas.md",
     "Parcial_2/03-Diseño de Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf",
     "Parcial_2/Lista de Temas.md",
     "Parcial_2/02-Patrones_de_diseño/01-Creacional/01-Singleton.md",
@@ -175,12 +182,6 @@
     "Sin nombre",
     "Parcial_2/02-Patrones_de_diseño/02-Estructural/01-Facade.md",
     "Parcial_2/02-Patrones_de_diseño/03-Comportamiento/02-Observer.md",
-    "Parcial_2/01-Vista_maquina_de_estados/ej-6.md",
-    "Parcial_2/01-Vista_maquina_de_estados/ej-5.md",
-    "Parcial_2/01-Vista_maquina_de_estados/ej-4.md",
-    "Parcial_2/01-Vista_maquina_de_estados/ej-3.md",
-    "Parcial_2/01-Vista_maquina_de_estados/ej-2.md",
-    "Parcial_2/01-Vista_maquina_de_estados/ej-1.md",
     "Parcial_2/01-Vista_maquina_de_estados/ej-3.md~",
     "Parcial_2/01-Vista_maquina_de_estados/Tips.md",
     "Parcial_2/02-Patrones_de_diseño/00-material/Resumen Patrones de Diseño.pdf",

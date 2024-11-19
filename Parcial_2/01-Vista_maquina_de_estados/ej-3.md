@@ -81,3 +81,5 @@ detenido -> [*]: Apagar
 
 @enduml
 ```
+
+![[Pasted image 20241118233558.png]]
