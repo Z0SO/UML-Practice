@@ -11,17 +11,28 @@
             "id": "1ef0a8d624d0e892",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Parcial_2/03-Diseño de Pantallas/ej-1.md",
-                "mode": "preview",
-                "source": false
+                "file": "Parcial_2/03-Diseño_de_Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf"
               },
-              "icon": "lucide-file",
-              "title": "ej-1"
+              "icon": "lucide-file-text",
+              "title": "08 - Guia TP - Entradas y Salidas -2024"
+            }
+          },
+          {
+            "id": "52c66293b58a34d4",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Parcial_2/03-Diseño_de_Pantallas/00-material/00-Par2_Modelos_Indexado_compressed.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "00-Par2_Modelos_Indexado_compressed"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,25 +173,26 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "1ef0a8d624d0e892",
+  "active": "52c66293b58a34d4",
   "lastOpenFiles": [
+    "Parcial_2/03-Diseño_de_Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf",
+    "Parcial_2/03-Diseño_de_Pantallas/00-material/00-Par2_Modelos_Indexado_compressed.pdf",
+    "Parcial_2/Lista de Temas.md",
+    "Parcial_2/03-Diseño_de_Pantallas/ej-1.md",
     "Parcial_2/01-Vista_maquina_de_estados/ej-3.md",
     "img/Pasted image 20241119010441.png",
     "img/Pasted image 20241119010410.png",
     "img/Pasted image 20241118233558.png",
-    "Parcial_2/03-Diseño de Pantallas/ej-1.md",
-    "Parcial_2/03-Diseño de Pantallas/00-material/Temas.md",
-    "Parcial_2/03-Diseño de Pantallas/00-material/Clase.md",
-    "Parcial_2/03-Diseño de Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf",
-    "Parcial_2/03-Diseño de Pantallas/00-material",
-    "Parcial_2/03-Diseño de Pantallas",
+    "Parcial_2/03-Diseño_de_Pantallas/00-material/Temas.md",
+    "Parcial_2/03-Diseño_de_Pantallas/00-material/Clase.md",
+    "Parcial_2/03-Diseño_de_Pantallas/00-material",
+    "Parcial_2/03-Diseño_de_Pantallas",
     "Parcial_2/01-Vista_maquina_de_estados/ej-3.md~",
     "Parcial_2/01-Vista_maquina_de_estados/ej-2.md",
     "Parcial_2/01-Vista_maquina_de_estados/Tips.md",
     "Parcial_2/01-Vista_maquina_de_estados/ej-1.md",
     "Parcial_2/02-Patrones_de_diseño/00-material/Resumen Patrones de Diseño.pdf",
     "Parcial_2/02-Patrones_de_diseño/00-Lista de Patrones.md",
-    "Parcial_2/Lista de Temas.md",
     "Parcial_2/02-Patrones_de_diseño/03-Comportamiento/02-Observer.md",
     "templates/template_patrones.md",
     "Parcial_2/02-Patrones_de_diseño/03-Comportamiento/01-State.md",
