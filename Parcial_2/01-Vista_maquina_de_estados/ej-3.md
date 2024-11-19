@@ -48,6 +48,8 @@ detenido -> [*]
 @startuml
 hide empty description
 
+
+
 state "Detenido" as detenido 
 state "Subiendo" as subiendo
 state "Bajando" as bajando
@@ -58,12 +60,25 @@ state "Ordenando solicitudes" as ordenandoSolicitudes
 
 [*] -> detenido: Encender
 
-detenido -> ordenandoSolicitudes: Solicitud para ir a un piso
+detenido --> ordenandoSolicitudes: Solicitud para ir a un piso
 
-ordenandoSolicitudes --> subiendo: Ir a un piso superior [ si (cantSolicitudes <= 5) y (pisoActual < pisoDestino) ]
+ordenandoSolicitudes ---> subiendo: Ir a un piso superior [ si (cantSolicitudes <= 5) y (pisoActual < pisoDestino) ]
 
-ordenandoSolicitudes --> bajando: Ir a un piso inferior [ si (cantSolicitudes <= 5) y (pisoActual > pisoDestino) ]
+ordenandoSolicitudes ---> bajando: Ir a un piso inferior [ si (cantSolicitudes <= 5) y (pisoActual > pisoDestino) ]
 
-detenido --> [*]: Apagar
+
+subiendo ----> detenidoConSolicitudes: Alcanzar piso superior [ si (cantSolicitudes > 1) Y ( (pisoActual=pisoMasCercano)O(pisoActual=pisoDestino) ) ]/ eliminar solicitud
+
+bajando ------> detenidoConSolicitudes: Alcanzar piso inferior [ si (cantSolicitudes > 1) Y ( (pisoActual=pisoMasCercano)O(pisoActual=pisoDestino) ) ]/ eliminar solicitud
+
+
+detenidoConSolicitudes ----> ordenandoSolicitudes: Siguiente solicitud
+
+' entra por aca solamente cuando no sea > 1, es decir, solo queda una solicitud
+bajando -----> detenido: Alcanzar piso inferior [ si (pisoActual=pisoDestino) ]/ eliminar solicitud
+subiendo ----> detenido: Alcanzar piso superior [ si (pisoActual=pisoDestino) ]/ eliminar solicitud
+
+detenido -> [*]: Apagar
+
 @enduml
 ```
