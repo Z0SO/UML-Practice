@@ -13,26 +13,27 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Parcial_2/03-Diseño_de_Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf"
+                "file": "Parcial_2/03-Diseño_de_Pantallas/00-material/00-Par2_Modelos_Indexado_compressed.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "08 - Guia TP - Entradas y Salidas -2024"
+              "title": "00-Par2_Modelos_Indexado_compressed"
             }
           },
           {
             "id": "52c66293b58a34d4",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Parcial_2/03-Diseño_de_Pantallas/00-material/00-Par2_Modelos_Indexado_compressed.pdf"
+                "file": "Parcial_2/03-Diseño_de_Pantallas/Parcial_2023.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "00-Par2_Modelos_Indexado_compressed"
+              "icon": "lucide-file",
+              "title": "Parcial_2023"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -88,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "fab04d3c7646a27f",
@@ -174,12 +174,15 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "52c66293b58a34d4",
+  "active": "1ef0a8d624d0e892",
   "lastOpenFiles": [
-    "Parcial_2/03-Diseño_de_Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf",
+    "Parcial_2/03-Diseño_de_Pantallas/Parcial_2023.md",
     "Parcial_2/03-Diseño_de_Pantallas/00-material/00-Par2_Modelos_Indexado_compressed.pdf",
-    "Parcial_2/Lista de Temas.md",
+    "Pasted image 20241119213400.png",
+    "Parcial_2/03-Diseño_de_Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf",
+    "Pasted image 20241119213316.png",
     "Parcial_2/03-Diseño_de_Pantallas/ej-1.md",
+    "Parcial_2/Lista de Temas.md",
     "Parcial_2/01-Vista_maquina_de_estados/ej-3.md",
     "img/Pasted image 20241119010441.png",
     "img/Pasted image 20241119010410.png",
@@ -208,7 +211,6 @@
     "img/Pasted image 20241114115449.png",
     "img",
     "templates",
-    "Parcial_2/02-Patrones_de_diseño/03-Comportamiento",
-    "Parcial_2/02-Patrones_de_diseño/02-Estructural"
+    "Parcial_2/02-Patrones_de_diseño/03-Comportamiento"
   ]
 }
