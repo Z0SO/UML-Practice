@@ -11,12 +11,14 @@
             "id": "1ef0a8d624d0e892",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Parcial_2/03-Diseño_de_Pantallas/00-material/00-Par2_Modelos_Indexado_compressed.pdf"
+                "file": "Parcial_2/03-Diseño_de_Pantallas/Parcial_Pinturas.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "00-Par2_Modelos_Indexado_compressed"
+              "icon": "lucide-file",
+              "title": "Parcial_Pinturas"
             }
           },
           {
@@ -171,11 +173,16 @@
       "canvas:Crear nuevo lienzo": false,
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false
+      "command-palette:Abrir paleta de comandos": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "1ef0a8d624d0e892",
   "lastOpenFiles": [
+    "Excalidraw/Parcial_Pinturas-ej4.excalidraw.md",
+    "Parcial_2/03-Diseño_de_Pantallas/Parcial_Pinturas.md",
+    "Excalidraw",
+    "Parcial_2/03-Diseño_de_Pantallas/00-material/00-Par2_Modelos_Indexado_compressed.pdf",
     "Parcial_2/03-Diseño_de_Pantallas/Parcial_2023.md",
     "conflict-files-obsidian-git.md",
     "img/Pasted image 20241119233420.png",
@@ -184,7 +191,6 @@
     "img/Pasted image 20241119233337.png",
     "img/Pasted image 20241119233320.png",
     "img/Pasted image 20241119233239.png",
-    "Parcial_2/03-Diseño_de_Pantallas/00-material/00-Par2_Modelos_Indexado_compressed.pdf",
     "img/Pasted image 20241119213400.png",
     "Parcial_2/03-Diseño_de_Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf",
     "img/Pasted image 20241119213316.png",
@@ -214,7 +220,6 @@
     "Parcial_2/02-Patrones_de_diseño/00-material/07 - Guía TP - Patrones de Diseño.pdf",
     "Parcial_1/examples/example.md",
     "img",
-    "templates",
-    "Parcial_2/02-Patrones_de_diseño/03-Comportamiento"
+    "templates"
   ]
 }
