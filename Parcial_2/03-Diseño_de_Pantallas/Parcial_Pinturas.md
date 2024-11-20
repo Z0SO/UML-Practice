@@ -5,8 +5,6 @@
 
 ```plantuml
 @startuml
-
-skinparam backgroundColor #99a
 hide empty description
 
 state "Aprobado Parcial" as aprobado_parcial
@@ -23,7 +21,7 @@ solicitado --> aprobado_parcial: [ cantStock >= cantSolicitada ] / Aprobar
 
 solicitado --> incompleto: [ cantStock < cantSolicitada ] / Desaprobar
 
-incompleto --> [*]: Informar
+incompleto --> [*]: / Informar
 
 aprobado_parcial --> rechazado: Referente rechaza
 aprobado_parcial -> aprobado: Referente aprueba
@@ -34,11 +32,7 @@ preparado --> entregado: Despachador entrega
 
 entregado --> [*]: [ cliente recibe ] / Notificar
 
-rechazado --> [*]: Notificar
-
-
-
-
+rechazado --> [*]: / Notificar
 
 @enduml
 ```

@@ -91,8 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "fab04d3c7646a27f",
@@ -180,11 +179,17 @@
   },
   "active": "1ef0a8d624d0e892",
   "lastOpenFiles": [
+    "Parcial_2/01-Vista_maquina_de_estados/ej-3.md",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-2.md",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-6.md",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-5.md",
+    "Parcial_2/01-Vista_maquina_de_estados/ej-4.md",
+    "Parcial_2/03-Diseño_de_Pantallas/ej-1.md",
+    "Parcial_2/03-Diseño_de_Pantallas/Parcial_Pinturas.md",
     "Parcial_2/03-Diseño_de_Pantallas/Parcial_Pinturas.md~",
     "Parcial_2/03-Diseño_de_Pantallas/Parcial_2023.md",
     "Parcial_2/Lista de Temas.md",
     "Excalidraw/Parcial_Pinturas-ej4.excalidraw.md",
-    "Parcial_2/03-Diseño_de_Pantallas/Parcial_Pinturas.md",
     "Excalidraw",
     "Parcial_2/03-Diseño_de_Pantallas/00-material/00-Par2_Modelos_Indexado_compressed.pdf",
     "conflict-files-obsidian-git.md",
@@ -197,8 +202,6 @@
     "img/Pasted image 20241119213400.png",
     "Parcial_2/03-Diseño_de_Pantallas/00-material/08 - Guia TP - Entradas y Salidas -2024.pdf",
     "img/Pasted image 20241119213316.png",
-    "Parcial_2/03-Diseño_de_Pantallas/ej-1.md",
-    "Parcial_2/01-Vista_maquina_de_estados/ej-3.md",
     "img/Pasted image 20241119010441.png",
     "img/Pasted image 20241119010410.png",
     "Parcial_2/03-Diseño_de_Pantallas/00-material/Temas.md",
@@ -206,7 +209,6 @@
     "Parcial_2/03-Diseño_de_Pantallas/00-material",
     "Parcial_2/03-Diseño_de_Pantallas",
     "Parcial_2/01-Vista_maquina_de_estados/ej-3.md~",
-    "Parcial_2/01-Vista_maquina_de_estados/ej-2.md",
     "Parcial_2/01-Vista_maquina_de_estados/Tips.md",
     "Parcial_2/01-Vista_maquina_de_estados/ej-1.md",
     "Parcial_2/02-Patrones_de_diseño/00-material/Resumen Patrones de Diseño.pdf",
@@ -221,7 +223,6 @@
     "Parcial_2/02-Patrones_de_diseño/01-Creacional/01-Singleton.md",
     "Parcial_2/02-Patrones_de_diseño/00-material/07 - Guía TP - Patrones de Diseño.pdf",
     "Parcial_1/examples/example.md",
-    "img",
-    "templates"
+    "img"
   ]
 }
