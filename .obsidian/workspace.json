@@ -177,8 +177,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1ef0a8d624d0e892",
+  "active": "3433555942bf848b",
   "lastOpenFiles": [
+    "Parcial_2/02-Patrones_de_diseño/00-material/bibliaPatrones_practica.pdf",
+    "Parcial_2/02-Patrones_de_diseño/00-material/IDENTIFICAR PATRONES DE DISEÑO (2).pdf",
     "Parcial_2/01-Vista_maquina_de_estados/ej-3.md",
     "Parcial_2/01-Vista_maquina_de_estados/ej-2.md",
     "Parcial_2/01-Vista_maquina_de_estados/ej-6.md",
@@ -222,7 +224,6 @@
     "Parcial_2/02-Patrones_de_diseño/01-Creacional/02-Factory Method.md",
     "Parcial_2/02-Patrones_de_diseño/01-Creacional/01-Singleton.md",
     "Parcial_2/02-Patrones_de_diseño/00-material/07 - Guía TP - Patrones de Diseño.pdf",
-    "Parcial_1/examples/example.md",
-    "img"
+    "Parcial_1/examples/example.md"
   ]
 }
